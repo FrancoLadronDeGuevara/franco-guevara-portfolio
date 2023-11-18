@@ -9,16 +9,18 @@ export default function Proyects() {
 
     return (
         <>
-        <hr />
-            <h2 className="h2-dosis">PROYECTOS</h2>
-            <hr />
-            <div className="container-proyectos">
-                {
-                    listaProyectos.map(proyect => (
-                    <Card key={proyect.id} imagen={proyect.imagen} name={proyect.name} description={proyect.description} linkWeb={proyect.linkWeb} linkGit={proyect.linkGit} />
-                    ))
-                }
+            <div className="container-proyects">
+                <h2>PROYECTOS</h2>
+                <hr />
+                <div className="proyects">
+                    {
+                        listaProyectos.map(proyect => (
+                            <Card key={proyect.id} imagen={proyect.imagen} name={proyect.name} description={proyect.description} linkWeb={proyect.linkWeb} linkGit={proyect.linkGit} />
+                        ))
+                    }
+                </div>
             </div>
+
         </>
     )
 }

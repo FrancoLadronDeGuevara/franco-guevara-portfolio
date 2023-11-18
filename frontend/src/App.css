@@ -8,16 +8,17 @@
 }
 
 body{
-    color: blanchedalmond;
+    color: whitesmoke;
 }
 
 h1, h2, h3, h6{
     text-shadow:
-            2px 1px 0px #474444,
-            4px 4px 2px rgba(0, 0, 0, 0.2);
+            2px 1px 0px hsl(0, 0%, 0%),
+            4px 4px 2px rgb(16, 9, 9);
 }
 
 h2{
+    padding-top: 2rem;
     font-size: 28px;
     text-align: center;
 }

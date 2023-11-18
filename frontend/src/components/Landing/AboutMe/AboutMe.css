@@ -1,3 +1,8 @@
+.container-about-me{
+    background: linear-gradient(to top, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.50) 100%);
+    /* rgb(47,44,61) */
+}
+
 .nes-container span{
     display: block;
     margin: .2rem auto;
@@ -8,7 +13,7 @@
     height: 250px;
     overflow-y: auto;
     overflow-x: hidden;
-    margin: 1rem !important;
+    margin: 0 1rem !important;
 }
 
 .content-about{

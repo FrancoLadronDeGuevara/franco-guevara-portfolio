@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Presentation from './components/Landing/Presentation/Presentation'
-import Skills from './components/Landing/Skills/Skills'
+import Skills from './components/Landing/Skills/Skills.jsx'
 import Proyects from './components/Landing/Proyects/Proyects'
 import Footer from './components/Footer/Footer'
 import ContactMe from './components/Landing/ContacMe/ContactMe'

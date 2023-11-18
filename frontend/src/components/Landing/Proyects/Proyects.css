@@ -1,4 +1,8 @@
-.container-proyectos{
+.container-proyects{
+    background-color: black;
+}
+
+.proyects{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -6,7 +10,7 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
-    .container-proyectos{
+    .proyects{
         flex-direction: column;
         align-items: center;
     }

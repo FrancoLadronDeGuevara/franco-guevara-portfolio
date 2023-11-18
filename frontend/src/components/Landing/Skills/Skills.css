@@ -1,5 +1,5 @@
-.container-skills{
-    background: linear-gradient(to bottom, rgb(71,59,59) 20%, rgba(0, 0, 0, 0.50) 100%);
+.container-skills {
+    background: linear-gradient(to bottom, rgb(71, 59, 59) 20%, rgba(0, 0, 0, 0.50) 100%);
     padding-top: 2rem;
 }
 
@@ -102,7 +102,6 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 1rem auto;
 }
 
 .container-tech,
@@ -110,7 +109,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40vw;
+    width: 45vw;
 }
 
 .container-tech h2,
@@ -118,16 +117,20 @@
     text-align: center;
 }
 
-.container-softskills div{
+.container-softskills{
+    border: thin solid black;
+}
+
+.container-softskills div {
     margin: 0 auto;
 }
 
-.softskill{
+.softskill {
     display: flex;
     align-items: center;
 }
 
-.softskill i{
+.softskill i {
     margin: 0 1.5rem;
 }
 
@@ -166,7 +169,7 @@
 }
 
 .skill-bar.level5 {
-    width: 100%;
+    width: 95%;
     background-color: #b9e0f7;
 }
 
@@ -196,7 +199,12 @@
         width: 80vw;
     }
 
-    .container-softskills{
+    .container-softskills {
         margin-top: 2rem;
     }
+}
+
+.title-box {
+    margin: auto auto;
+    /* width: fit-content; */
 }
