@@ -1,5 +1,7 @@
 .container-skills{
     background-color: rgb(71,59,59);
+    padding-top: 2rem;
+    /* height: 60vh; */
 }
 
 @keyframes scroll {

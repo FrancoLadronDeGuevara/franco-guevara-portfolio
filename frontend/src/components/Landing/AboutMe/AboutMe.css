@@ -4,7 +4,36 @@
 }
 
 .about-me{
-    height: 300px;
+    display: flex;
+    height: 250px;
     overflow-y: auto;
+    overflow-x: hidden;
     margin: 1rem !important;
+}
+
+.content-about{
+    position: relative;
+}
+
+.scroll-icon{
+    position: sticky;
+    top: 0;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.scroll-icon img{
+    width: 32px;
+    height: 32px;
+    animation: blink-animation .8s steps(5, start) infinite;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }

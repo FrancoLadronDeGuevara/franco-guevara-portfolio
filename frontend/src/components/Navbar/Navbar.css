@@ -1,13 +1,8 @@
-/**************************/
-/****     NAVBAR       ****/
-/**************************/
-
 .container-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0);
-    /* padding: 1rem; */
+    background-color: rgba(81, 74, 74, 0.611);
     position: sticky;
     top: 0;
     z-index: 99;
@@ -24,8 +19,8 @@
 }
 
 .terminal-img {
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     z-index: 999;
     top: 10px;
