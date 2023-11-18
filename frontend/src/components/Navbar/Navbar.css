@@ -7,24 +7,71 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
-    padding: 1rem;
+    /* padding: 1rem; */
     position: sticky;
     top: 0;
     z-index: 99;
 }
 
-
-/**************************/
-/****       LOGO       ****/
-/**************************/
-.navbar-img{
+.navbar-img {
     width: 100%;
     height: 100%;
 }
 
+.btn-terminal {
+    border: none;
+    background-color: transparent;
+}
 
-/**************************/
-/****      SWITCH      ****/
-/**************************/
+.terminal-img {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    right: 30px;
+}
 
+.animation-terminal-img{
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
 
+.open-terminal {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+}
+
+.open {
+    background-color: darkgray;
+    padding: 1rem 3rem;
+    width: 100%;
+    transform: translateY(80px);
+}
+
+.charging-terminal{
+    overflow-x: auto;
+}
+
+.text-terminal{
+    display: flex;
+}
+
+.text-terminal input{
+    background-color: gray;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}

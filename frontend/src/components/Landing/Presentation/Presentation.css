@@ -11,7 +11,7 @@
 .parallax{
     position: absolute;
     background-image: url("../../../assets/bgprofile.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: round;
     z-index: -1;
     width: 100%;
@@ -69,19 +69,9 @@
     width: 220px;
 }
 
-
-
-@media (min-width: 320px) and (max-width: 624px) {
-    .container{
-        height: 70vh;
-    }
-    .parallax {
-        background-size: cover;
-    }
-}
-
 @media (min-width: 320px) and (max-width: 425px) {
-    .container {
+    .container{
+        height: 60vh;
         flex-direction: column;
     }
 
@@ -101,6 +91,10 @@
 }
 
 @media (min-width: 426px) and (max-width: 576px) {
+    .container{
+        height: 70vh;
+    }
+
     .container-right-side {
         padding: .5rem;
         height: 250px;
@@ -117,6 +111,10 @@
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+    .container{
+        height: 80vh;
+    }
+
     .container-right-side {
         padding: .5rem;
         height: 300px;
