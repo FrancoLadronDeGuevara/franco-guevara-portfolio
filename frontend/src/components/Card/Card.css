@@ -109,7 +109,7 @@
     position: absolute;
     top: 5%;
     left: 20%;
-    opacity: 0;
+    display: none;
 }
 
 .buttons-links a button {
@@ -135,5 +135,9 @@
 
 .hidden {
     opacity: 0;
+}
+
+.show{
+    display: block;
 }
 
