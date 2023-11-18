@@ -1,0 +1,204 @@
+.container-skills{
+    background-color: rgb(71,59,59);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider-skills {
+    background: rgb(71,59,59);
+    margin: 1rem auto;
+    padding: .5rem 0px .5rem 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-skills::before,
+.slider-skills::after {
+    background: linear-gradient(to right, rgb(71,59,59) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+.slider-skills::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+.slider-skills::before {
+    left: 0;
+    top: 0;
+}
+
+.slider-skills .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 18);
+
+}
+
+.slider-skills .slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slider-skills .slide-skill {
+    width: 150px;
+}
+
+.slide-skill img {
+    width: 120px;
+}
+
+.slide-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+
+/**************************/
+/****    MEDIAQUERIES  ****/
+/**************************/
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .slide-skill img {
+        width: 60px;
+    }
+}
+
+
+/**************************/
+/****     SKILL BARS   ****/
+/**************************/
+
+.container-tech-softskills {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto;
+}
+
+.container-tech,
+.container-softskills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+.container-tech h2,
+.container-softskills h2 {
+    text-align: center;
+}
+
+hr {
+    margin: 1rem 0px 1rem 0px;
+}
+
+.container-softskills div{
+    margin: 0 auto;
+}
+
+.softskill{
+    font-size: 18px;
+    font-weight: bolder;
+    margin: .5rem 0;
+}
+
+.softskill i{
+    margin: auto 1rem;
+}
+
+.skill-bar-container {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin-bottom: 0.5em;
+}
+
+.skill-bar {
+    display: block;
+    border-radius: 4px;
+    height: 25px;
+}
+
+.skill-bar.level1 {
+    width: 50%;
+    background-color: #b9e0f7;
+}
+
+.skill-bar.level2 {
+    width: 70%;
+    background-color: #b9e0f7;
+}
+
+.skill-bar.level3 {
+    width: 80%;
+    background-color: #b9e0f7;
+}
+
+.skill-bar.level4 {
+    width: 90%;
+    background-color: #b9e0f7;
+}
+
+.skill-bar.level5 {
+    width: 100%;
+    background-color: #b9e0f7;
+}
+
+.skill-name {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #333;
+}
+
+.skill-percent {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #999;
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+    .container-tech-softskills {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-tech,
+    .container-softskills {
+        width: 80vw;
+    }
+
+    .container-softskills{
+        margin-top: 2rem;
+    }
+}

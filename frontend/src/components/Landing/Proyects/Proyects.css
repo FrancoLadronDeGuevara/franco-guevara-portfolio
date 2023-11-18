@@ -1,0 +1,13 @@
+.container-proyectos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .container-proyectos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
