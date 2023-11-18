@@ -19,8 +19,7 @@ const Skills = () => {
     return (
         <>
             <article className="container-skills">
-                <h2 className="h2-dosis">Tecnologías</h2>
-                <hr />
+                <h2>Tecnologías</h2>
                 <section className="slider-skills">
                     <div className="slide-track">
                         <div className="slide-skill">

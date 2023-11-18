@@ -1,7 +1,6 @@
 .container-skills{
-    background-color: rgb(71,59,59);
+    background: linear-gradient(to bottom, rgb(71,59,59) 20%, rgba(0, 0, 0, 0.50) 100%);
     padding-top: 2rem;
-    /* height: 60vh; */
 }
 
 @keyframes scroll {
@@ -15,7 +14,7 @@
 }
 
 .slider-skills {
-    background: rgb(71,59,59);
+    background: transparent;
     margin: 1rem auto;
     padding: .5rem 0px .5rem 0px;
     overflow: hidden;
@@ -24,23 +23,25 @@
 
 .slider-skills::before,
 .slider-skills::after {
-    background: linear-gradient(to right, rgb(71,59,59) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: url("../../../assets/mariotubo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     content: "";
     height: 100%;
     position: absolute;
-    width: 100px;
+    width: 100%;
     z-index: 2;
 }
 
 .slider-skills::after {
-    right: 0;
+    right: -50px;
     top: 0;
     -webkit-transform: rotateZ(180deg);
     transform: rotateZ(180deg);
 }
 
 .slider-skills::before {
-    left: 0;
+    left: -50px;
     top: 0;
 }
 
