@@ -151,7 +151,7 @@ const Skills = () => {
                         </div>
                     </div>
                     <div className="container-softskills">
-                        <h2 className="h2-dosis">Soft Skills</h2>
+                        <h2>Soft Skills</h2>
                         <hr />
                         <div>
                             <p className="softskill"><i className="nes-icon trophy"></i>Creatividad</p>

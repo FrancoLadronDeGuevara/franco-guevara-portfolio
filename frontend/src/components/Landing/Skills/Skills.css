@@ -86,7 +86,7 @@
 
 @media (min-width: 320px) and (max-width: 425px) {
     .slide-skill img {
-        width: 60px;
+        width: 90px;
     }
 }
 
@@ -115,22 +115,17 @@
     text-align: center;
 }
 
-hr {
-    margin: 1rem 0px 1rem 0px;
-}
-
 .container-softskills div{
     margin: 0 auto;
 }
 
 .softskill{
-    font-size: 18px;
-    font-weight: bolder;
-    margin: .5rem 0;
+    display: flex;
+    align-items: center;
 }
 
 .softskill i{
-    margin: auto 1rem;
+    margin: 0 1.5rem;
 }
 
 .skill-bar-container {

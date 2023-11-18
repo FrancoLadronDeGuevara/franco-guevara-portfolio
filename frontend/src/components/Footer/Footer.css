@@ -10,6 +10,11 @@
     font-size: 10px;
 }
 
+.container-footer i{
+    font-size: 0;
+    margin: 0 .8rem;
+}
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
     .container-footer{
         flex-direction: column-reverse;
