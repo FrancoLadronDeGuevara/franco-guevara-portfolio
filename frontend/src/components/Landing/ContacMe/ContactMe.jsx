@@ -9,7 +9,7 @@ export default function ContactMe() {
         <>
             <section className="container-contact">
                 <div>
-                    <h2 className="h2-dosis">Contactame!</h2>
+                    <h2>Contactame!</h2>
                     <hr />
                     <div className="contact-left-info">
                         <div><i><AiOutlineMail /></i><p>francoguevara93@gmail.com</p></div>

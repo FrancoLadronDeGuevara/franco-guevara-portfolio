@@ -1,6 +1,5 @@
 .container-skills {
-    background: linear-gradient(to bottom, rgb(71, 59, 59) 20%, rgba(0, 0, 0, 0.50) 100%);
-    padding-top: 2rem;
+    background-color: #11ADC1;
 }
 
 @keyframes scroll {
@@ -83,42 +82,27 @@
 }
 
 
-/**************************/
-/****    MEDIAQUERIES  ****/
-/**************************/
-
-@media (min-width: 320px) and (max-width: 425px) {
-    .slide-skill img {
-        width: 90px;
-    }
-}
-
-
-/**************************/
-/****     SKILL BARS   ****/
-/**************************/
-
 .container-tech-softskills {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin: 2rem auto;
 }
 
 .container-tech,
 .container-softskills {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background-color: #afc3bc;
+    box-shadow: 7px 7px 8px black;
     width: 45vw;
+    margin: 1rem auto !important;
+    padding: 1rem !important;
 }
 
-.container-tech h2,
-.container-softskills h2 {
+.text-skills{
     text-align: center;
-}
-
-.container-softskills{
-    border: thin solid black;
+    font-size: 19px;
 }
 
 .container-softskills div {
@@ -130,64 +114,64 @@
     align-items: center;
 }
 
-.softskill i {
-    margin: 0 1.5rem;
-}
-
 .skill-bar-container {
     position: relative;
     width: 100%;
     border-radius: 4px;
     background-color: whitesmoke;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .skill-bar {
     display: block;
     border-radius: 4px;
-    height: 25px;
+    height: 30px;
+
 }
 
 .skill-bar.level1 {
+    margin-right: 100%;
+    margin-left: 1%;
     width: 50%;
-    background-color: #b9e0f7;
+    background-color: #F2C409;
 }
 
 .skill-bar.level2 {
+    margin-right: 100%;
+    margin-left: 1%;
     width: 70%;
-    background-color: #b9e0f7;
+    background-color: #F2C409;
 }
 
 .skill-bar.level3 {
+    margin-right: 100%;
+    margin-left: 1%;
     width: 80%;
-    background-color: #b9e0f7;
+    background-color: #F2C409;
 }
 
 .skill-bar.level4 {
+    margin-right: 100%;
+    margin-left: 1%;
     width: 90%;
-    background-color: #b9e0f7;
+    background-color: #F2C409;
 }
 
 .skill-bar.level5 {
+    margin-right: 100%;
+    margin-left: 1%;
     width: 95%;
-    background-color: #b9e0f7;
+    background-color: #F2C409;
 }
 
 .skill-name {
     position: absolute;
     top: 5px;
     left: 10px;
-    color: #333;
+    color: #473b3b;
 }
 
-.skill-percent {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    color: #999;
-}
-
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .container-tech-softskills {
         flex-direction: column;
         justify-content: center;
@@ -204,7 +188,32 @@
     }
 }
 
-.title-box {
-    margin: auto auto;
-    /* width: fit-content; */
+@media (min-width: 320px) and (max-width: 425px) {
+    .slide-skill img {
+        width: 90px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .softskill{
+        font-size: 9px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 576px) {
+    .softskill{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .softskill{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 871px) {
+    .softskill{
+        font-size: 13px;
+    }
 }

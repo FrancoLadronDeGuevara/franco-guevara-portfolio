@@ -27,8 +27,8 @@ export default function Skills() {
                 </section>
 
                 <section className="container-tech-softskills">
-                    <div className="container-tech">
-                        <h2>Skills</h2>
+                    <div className="container-tech nes-container is-rounded">
+                        <h3 className="text-skills">Skills</h3>
                         <hr />
                         {techSkills.map((techSkill, index) => (
                             <div key={index} className="skill-bar-container">
@@ -37,8 +37,8 @@ export default function Skills() {
                             </div>
                         ))}
                     </div>
-                    <div className="container-softskills">
-                        <h2>Soft Skills</h2>
+                    <div className="container-softskills nes-container is-rounded">
+                        <h3 className="text-skills">Soft Skills</h3>
                         <hr />
                         <div>
                             <p className="softskill"><i className="nes-icon trophy"></i>Creatividad</p>

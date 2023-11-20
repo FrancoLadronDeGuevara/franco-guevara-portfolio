@@ -8,6 +8,7 @@
 }
 
 body{
+    background-color: #11ADC1;
     color: whitesmoke;
 }
 
@@ -18,12 +19,18 @@ h1, h2, h3, h6{
 }
 
 h2{
-    padding-top: 2rem;
+    margin: 2rem auto;
     font-size: 28px;
     text-align: center;
 }
 
+hr{
+    margin-bottom: .8rem;
+}
 
+.nes-icon{
+    font-size: 0;
+}
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
     h1 {
