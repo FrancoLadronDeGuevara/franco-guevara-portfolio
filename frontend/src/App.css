@@ -12,6 +12,16 @@ body{
     color: whitesmoke;
 }
 
+.nes-container{
+    border-image-repeat: repeat !important;
+    text-shadow: 3px 2px 5px black;
+}
+
+.nes-btn, .nes-input, .nes-textarea{
+    border-image-repeat: repeat !important;
+
+}
+
 h1, h2, h3, h6{
     text-shadow:
             2px 1px 0px hsl(0, 0%, 0%),
@@ -19,13 +29,8 @@ h1, h2, h3, h6{
 }
 
 h2{
-    margin: 2rem auto;
     font-size: 28px;
     text-align: center;
-}
-
-hr{
-    margin-bottom: .8rem;
 }
 
 .nes-icon{

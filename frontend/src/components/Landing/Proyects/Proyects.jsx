@@ -10,8 +10,11 @@ export default function Proyects() {
     return (
         <>
             <div className="container-proyects">
-                <h2>PROYECTOS</h2>
-                <hr />
+                <div className="title-box">
+                    <hr />
+                    <span>PROYECTOS</span>
+                    <hr />
+                </div>
                 <div className="proyects">
                     {
                         listaProyectos.map(proyect => (

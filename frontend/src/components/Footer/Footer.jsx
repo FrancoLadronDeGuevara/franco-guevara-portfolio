@@ -9,7 +9,7 @@ export default function Footer(){
                     ©2023 Franco Guevara
                 </p>
 
-                <div>
+                <div className="footer-icons">
                     <a href="https://github.com/FrancoLadronDeGuevara" target={"_blank"} rel={"noreferrer"}><i className="nes-icon github"></i></a>
                     <a href="https://www.facebook.com/FrancoDeGuevara/" target={"_blank"} rel={"noreferrer"}><i className="nes-icon facebook"></i></a>
                     <a href="" target={"_blank"} rel={"noreferrer"}><i className="nes-icon whatsapp"></i></a>

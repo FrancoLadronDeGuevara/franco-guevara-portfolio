@@ -26,8 +26,12 @@ export default function AboutMe() {
 
     return (
         <>
+            <div className="title-box">
+                <hr />
+                <span>¿Quién soy?</span>
+                <hr />
+            </div>
             <div className="container-about-me">
-                <h2>SOBRE MI!</h2>
                 <div className="nes-container is-rounded about-me" ref={containerRef}>
                     <article className="content-about">
                         <span>Soy un desarrollador web full-stack que fusiona amor por la tecnología con fascinación por los videojuegos y el diseño.</span>

@@ -18,14 +18,14 @@
 }
 
 .contact-left-info div p{
-    font-size: 6px;
+    font-size: 10px;
 }
 
 
 
 .contact-left-info i{
     font-size: 32px;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .contact-left-info i svg{
@@ -35,7 +35,7 @@
 .contact-right form{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 310px;
 }
 
 #userEmail, #userName, #userMessage{

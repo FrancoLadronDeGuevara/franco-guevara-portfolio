@@ -2,6 +2,26 @@
     background-color: #11ADC1;
 }
 
+.title-box{
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.title-box span{
+    font-size: 28px;
+    text-align: center;
+    text-shadow:
+            2px 1px 0px hsl(0, 0%, 0%),
+            4px 4px 2px rgb(16, 9, 9);
+}
+
+.title-box hr{
+    display: inline;
+    width: 100%;
+}
+
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -169,6 +189,7 @@
     top: 5px;
     left: 10px;
     color: #473b3b;
+    text-shadow: none;
 }
 
 @media (min-width: 320px) and (max-width: 768px) {

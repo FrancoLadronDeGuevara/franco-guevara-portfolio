@@ -9,7 +9,9 @@ export default function Skills() {
         <>
             <article className="container-skills">
                 <div className="title-box">
-                    <h2>Tecnologías</h2>
+                    <hr />
+                    <span>Tecnologías</span>
+                    <hr />
                 </div>
                 <section className="slider-skills">
                     <div className="slide-track">
@@ -29,7 +31,6 @@ export default function Skills() {
                 <section className="container-tech-softskills">
                     <div className="container-tech nes-container is-rounded">
                         <h3 className="text-skills">Skills</h3>
-                        <hr />
                         {techSkills.map((techSkill, index) => (
                             <div key={index} className="skill-bar-container">
                                 <span className="skill-name">{techSkill.name}</span>
@@ -39,7 +40,6 @@ export default function Skills() {
                     </div>
                     <div className="container-softskills nes-container is-rounded">
                         <h3 className="text-skills">Soft Skills</h3>
-                        <hr />
                         <div>
                             <p className="softskill"><i className="nes-icon trophy"></i>Creatividad</p>
                             <p className="softskill"><i className="nes-icon trophy"></i>Trabajo en Equipo</p>
