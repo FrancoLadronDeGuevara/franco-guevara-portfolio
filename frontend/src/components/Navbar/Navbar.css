@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(81, 74, 74, 0.611);
+    background-color: white;
     position: sticky;
     top: 0;
     z-index: 99;
@@ -13,60 +13,3 @@
     height: 100%;
 }
 
-.btn-terminal {
-    border: none;
-    background-color: transparent;
-}
-
-.terminal-img {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    z-index: 999;
-    top: 10px;
-    right: 30px;
-}
-
-.animation-terminal-img{
-    animation: blink-animation 1s steps(5, start) infinite;
-    -webkit-animation: blink-animation 1s steps(5, start) infinite;
-}
-
-.open-terminal {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    transition: transform 0.3s ease-in-out;
-    transform: translateY(-100%);
-}
-
-.open {
-    background-color: darkgray;
-    padding: 1rem 3rem;
-    width: 100%;
-    transform: translateY(80px);
-}
-
-.charging-terminal{
-    overflow-x: auto;
-}
-
-.text-terminal{
-    display: flex;
-}
-
-.text-terminal input{
-    background-color: gray;
-}
-
-@keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}
-
-@-webkit-keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
-}

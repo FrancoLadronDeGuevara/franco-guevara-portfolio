@@ -6,6 +6,7 @@ import Proyects from './components/Landing/Proyects/Proyects'
 import Footer from './components/Footer/Footer'
 import ContactMe from './components/Landing/ContacMe/ContactMe'
 import AboutMe from './components/Landing/AboutMe/AboutMe'
+import Certification from './components/Landing/Certification/Certification.jsx'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Skills />
         <AboutMe />
         <Proyects />
+        <Certification/>
         <ContactMe />
       </main>
       <Footer />

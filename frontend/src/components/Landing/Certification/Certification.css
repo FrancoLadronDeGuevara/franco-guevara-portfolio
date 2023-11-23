@@ -1,0 +1,21 @@
+.container-certification{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.window{
+    position: relative;
+    width: 274px;
+    height: 245px;
+    background-image: url("../../../assets/certification/cuadro.png");
+    margin: 1.5rem;
+}
+
+.cert-image{
+    position: absolute;
+    width: 205px;
+    height: 105px;
+    top: 105px;
+    left: 34px;
+}
