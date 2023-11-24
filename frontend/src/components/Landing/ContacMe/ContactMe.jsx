@@ -21,7 +21,7 @@ export default function ContactMe() {
                     <form action="">
                         <input className="nes-input" type="email" name="email" id="userEmail" placeholder="Email"  required/>
 
-                        <input className="nes-input" type="text" name="userName" id="userName" placeholder="Nombre completo"  required/>
+                        <input className="nes-input" type="text" name="userName" id="userName" placeholder="Asunto"  required/>
 
                         <textarea name="textarea" className="nes-textarea" id="userMessage" cols="50" rows="3" placeholder="Mensaje" required></textarea>
 

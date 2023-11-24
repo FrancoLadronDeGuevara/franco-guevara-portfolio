@@ -3,12 +3,18 @@ import "./Certification.css"
 import { useState } from "react"
 
 export default function Certification() {
-    const [open, setOpen] = useState(false);
+    const [isImageOpen, setImageOpen] = useState(false);
+    const [selectedCertificate, setSelectedCertificate] = useState(null);
 
-    const handleOpen = () =>{
-        setOpen(!open)
-        console.log(open)
-    }
+    const openImage = (certificate) => {
+        setSelectedCertificate(certificate);
+        setImageOpen(true);
+    };
+
+    const closeImage = () => {
+        setSelectedCertificate(null);
+        setImageOpen(false);
+    };
 
     return (
         <>
@@ -19,11 +25,16 @@ export default function Certification() {
             </div>
             <div className="container-certification">
                 {certificationList.map(certificate => (
-                    <div key={certificate.id} className="window">
-                        <img src={certificate.img} alt="" className="cert-image" onClick={handleOpen}/>
+                    <div key={certificate.id} className="window" onClick={() => openImage(certificate)}>
+                        <img src={certificate.img} alt="" className="cert-image" />
                     </div>
                 ))}
+            </div>
 
+            <div className={`full-image ${isImageOpen ? 'open' : ''}`} onClick={closeImage}>
+                {isImageOpen && selectedCertificate && (
+                    <img src={selectedCertificate.img} alt="" />
+                )}
             </div>
         </>
     )

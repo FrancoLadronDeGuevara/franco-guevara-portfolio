@@ -43,6 +43,10 @@
     margin-bottom: 1rem;
 }
 
+#userMessage{
+    resize: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .container-contact{
         flex-direction: column;
