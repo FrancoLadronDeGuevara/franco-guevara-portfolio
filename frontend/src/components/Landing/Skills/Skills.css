@@ -42,7 +42,7 @@
 
 .slider-skills::before,
 .slider-skills::after {
-    background-image: url("../../../assets/mariotubo.png");
+    background-image: url("../../../assets/icons/mariotubo.png");
     background-size: contain;
     background-repeat: no-repeat;
     content: "";

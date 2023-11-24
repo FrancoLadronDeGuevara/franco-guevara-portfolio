@@ -1,60 +1,81 @@
-.container-about-me{
-    background-color: #11ADC1;
-    margin: 2rem auto;
+.container-about-me {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem;
 }
 
-.about-me-img img{
-    transform: rotateY(180deg);
-    height: 350px;
+.about-me-first p,
+.about-me-last p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    text-shadow:
+        2px 1px 0px hsl(0, 0%, 0%),
+        4px 4px 2px rgb(16, 9, 9);
 }
 
-.nes-container span{
-    display: block;
-    margin: .2rem auto;
-}
-
-.about-me{
-    background-color: #afc3bc;
-    box-shadow: 7px 7px 8px black;
-    display: flex;
-    height: 250px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin: 0 1rem !important;
-}
-
-.content-about{
+.arcade-image {
     position: relative;
+    width: 300px;
+    height: 300px;
+    background-image: url("../../../assets/icons/arcade.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1rem 0;
+    cursor: pointer;
 }
 
-.scroll-icon{
-    position: sticky;
-    top: 0;
-    opacity: 1;
-    transition: opacity 0.5s;
+.colors {
+    position: absolute;
+    width: 80px;
+    height: 50px;
+    top: 80px;
+    left: 110px;
+    animation: neon 0.5s ease-in-out infinite alternate;
 }
 
-.scroll-icon img{
-    width: 32px;
-    height: 32px;
-    animation: blink-animation .8s steps(5, start) infinite;
+.click {
+    position: absolute;
+    background-image: url("../../../assets/icons/click.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 60px;
+    animation: clicker 1s infinite;
 }
 
-.hidden{
-    opacity: 0;
-}
+@keyframes neon {
+    from {
+        box-shadow: 0 0 10px #00000085, 0 0 20px #00000085, 0 0 30px #00000085, 0 0 40px #ff9900,
+            0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+    }
 
-@keyframes blink-animation {
     to {
-        visibility: hidden;
+        box-shadow: 0 0 5px #00000085, 0 0 10px #00000085, 0 0 15px #00000085, 0 0 20px #ff9900,
+            0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 576px) {
-    .about-me-img img{
-        display: none;
+@keyframes clicker {
+    0% {
+        transform: rotateZ(-30deg);
+        transform: scale(1);
+    }
+
+    50% {
+        transform: rotateZ(-30deg);
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: rotateZ(-30deg);
+        transform: scale(1);
     }
 }

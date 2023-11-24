@@ -1,28 +1,21 @@
-import { useEffect, useRef, useState } from "react";
-import Arrow from "../../../assets/icons/arrow.png"
+
 import "./AboutMe.css"
+import music from "../../../assets/sounds/aboutme.mp3"
+import { useRef, useState } from "react";
 
 export default function AboutMe() {
-    const containerRef = useRef(null);
-    const scrollIconRef = useRef(null);
-    const [isAtBottom, setIsAtBottom] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const audio = useRef(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const container = containerRef.current;
-            const scrollPosition = container.scrollTop;
-            const atBottom = scrollPosition >= (container.scrollHeight - container.clientHeight);
-
-            setIsAtBottom(atBottom);
-        };
-
-        const container = containerRef.current;
-        container.addEventListener("scroll", handleScroll);
-
-        return () => {
-            container.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    const handleMusic = () => {
+        if (!isPlaying) {
+            audio.current = new Audio(music);
+            audio.current.play();
+        } else {
+            audio.current.pause();
+        }
+        setIsPlaying(!isPlaying);
+    };
 
     return (
         <>
@@ -32,16 +25,17 @@ export default function AboutMe() {
                 <hr />
             </div>
             <div className="container-about-me">
-                <div className="nes-container is-rounded about-me" ref={containerRef}>
-                    <article className="content-about">
-                        <span>Soy un desarrollador web full-stack que fusiona amor por la tecnología con fascinación por los videojuegos y el diseño.</span>
-                        <span>Me enfoco en crear experiencias digitales atractivas y funcionales para los usuarios, canalizando mi creatividad y habilidades de resolución de problemas. </span>
-                        <span>Fuera del desarrollo web, dedico mi tiempo al estudio del diseño de juegos y a la creación de juegos en 2D con Godot. </span>
-                        Mi compromiso con el aprendizaje continuo impulsa mi motivación y me mantiene comprometido con mi desarrollo profesional, enfrentando con entusiasmo nuevos desafíos.
-                    </article>
-                    <div className={`scroll-icon ${isAtBottom ? 'hidden' : ''}`} ref={scrollIconRef}>
-                        <img src={Arrow}></img>
-                    </div>
+                <div className="about-me-first">
+                    <p>Soy un desarrollador web full-stack que fusiona amor por la tecnología con fascinación por los videojuegos y el diseño.</p>
+                    <p>Me enfoco en crear experiencias digitales atractivas y funcionales para los usuarios, canalizando mi creatividad y habilidades de resolución de problemas.</p>
+                </div>
+                <div className="arcade-image" onClick={handleMusic}>
+                    <div className="colors"></div>
+                    <div className="click"></div>
+                </div>
+                <div className="about-me-last">
+                    <p>Fuera del desarrollo web, dedico mi tiempo al estudio del diseño de juegos y a la creación de juegos en 2D con Godot.</p>
+                    <p>Mi compromiso con el aprendizaje continuo impulsa mi motivación y me mantiene comprometido con mi desarrollo profesional, enfrentando con entusiasmo nuevos desafíos.</p>
                 </div>
             </div>
 
