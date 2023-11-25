@@ -1,6 +1,6 @@
 
 import "./AboutMe.css"
-import music from "../../../assets/sounds/aboutme.mp3"
+import soundtrack from "../../../assets/sounds/soundtrack.mp3"
 import { useRef, useState } from "react";
 
 export default function AboutMe() {
@@ -9,7 +9,7 @@ export default function AboutMe() {
 
     const handleMusic = () => {
         if (!isPlaying) {
-            audio.current = new Audio(music);
+            audio.current = new Audio(soundtrack);
             audio.current.play();
         } else {
             audio.current.pause();

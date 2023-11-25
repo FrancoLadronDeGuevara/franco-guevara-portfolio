@@ -140,13 +140,13 @@
     border-radius: 4px;
     background-color: whitesmoke;
     margin-bottom: 1em;
+    padding: .2rem 0;
 }
 
 .skill-bar {
     display: block;
     border-radius: 4px;
     height: 30px;
-
 }
 
 .skill-bar.level1 {

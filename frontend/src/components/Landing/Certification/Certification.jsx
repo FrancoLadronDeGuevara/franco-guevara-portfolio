@@ -33,7 +33,10 @@ export default function Certification() {
 
             <div className={`full-image ${isImageOpen ? 'open' : ''}`} onClick={closeImage}>
                 {isImageOpen && selectedCertificate && (
-                    <img src={selectedCertificate.img} alt="" />
+                    <div className="certificate">
+                        <p className="certificate-title">{selectedCertificate.name}</p>
+                        <img src={selectedCertificate.img} alt={selectedCertificate.name} />
+                    </div>
                 )}
             </div>
         </>
