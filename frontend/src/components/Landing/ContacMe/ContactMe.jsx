@@ -3,7 +3,9 @@ import { AiOutlineWhatsApp, AiOutlineMail, AiOutlineEnvironment } from "react-ic
 
 export default function ContactMe() {
 
-
+    const handleSubmit = (e)=>{
+        e.preventDefault()
+    }
 
     return (
         <>
@@ -18,7 +20,7 @@ export default function ContactMe() {
                     </div>
                 </div>
                 <div className="contact-right">
-                    <form action="">
+                    <form onSubmit={handleSubmit}>
                         <input className="nes-input" type="email" name="email" id="userEmail" placeholder="Email"  required/>
 
                         <input className="nes-input" type="text" name="userName" id="userName" placeholder="Asunto"  required/>

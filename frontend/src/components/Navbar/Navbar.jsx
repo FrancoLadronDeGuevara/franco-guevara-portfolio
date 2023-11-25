@@ -1,18 +1,16 @@
 import "./Navbar.css";
-import Logo from "../../assets/LogoFranco.png";
-
 
 export default function Navbar() {
 
     return (
         <>
             <div className="container-navbar">
-                <div className="francoGuevaraLogo">
-                    <img src={Logo} alt="" className="navbar-img" />
+                <div className="nes-container logo-navbar">
+                    <p className="text-navbar">FG</p>
                 </div>
-                <div className="container-switch">
+                <div className="btn-navbar">
+                    <button><i className="nes-jp-logo"></i></button>
                 </div>
-
             </div>
         </>
     )

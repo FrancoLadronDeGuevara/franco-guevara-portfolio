@@ -1,4 +1,5 @@
 .container-about-me {
+    background-color: #11ADC1;
     display: flex;
     flex-direction: column;
     justify-content: center;

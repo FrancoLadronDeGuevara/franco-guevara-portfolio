@@ -1,4 +1,4 @@
-import ImagenPerfil from "../../../assets/perfil.jpg"
+import ImagenPerfil from "../../../assets/profile/version2.png"
 import "./Presentation.css"
 
 export default function Presentation() {

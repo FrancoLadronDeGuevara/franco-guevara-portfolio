@@ -3,7 +3,9 @@
 }
 
 .title-box{
-    margin: 5rem auto;
+    background-color: #11ADC1;
+    padding: 5rem 0;
+    /* margin: 5rem auto; */
     display: flex;
     align-items: center;
 }
@@ -106,7 +108,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 2rem auto;
+    margin-top: 3rem;
 }
 
 .container-tech,
