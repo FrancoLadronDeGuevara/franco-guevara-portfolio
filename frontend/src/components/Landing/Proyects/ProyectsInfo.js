@@ -3,6 +3,7 @@ import imagenProyecto2 from "../../../assets/proyects/p2foto1.png";
 import imagenProyecto3 from "../../../assets/proyects/p3foto1.png";
 import imagenRollingGame from "../../../assets/proyects/rollingGame.png";
 import imagenChickenAdventure from "../../../assets/proyects/chikenAdventure.png";
+import imagenProyecto4 from "../../../assets/proyects/p4foto1.png";
 
 export const listaProyectos = [
     {
@@ -44,5 +45,13 @@ export const listaProyectos = [
         "imagen": imagenChickenAdventure,
         "linkWeb": "https://itch.io/embed-upload/9062024?color=333333",
         "linkGit": "https://github.com/FrancoLadronDeGuevara/ChickenAdventureGame"
+    },
+    {
+        "id": 6,
+        "name": "Portfolio",
+        "description": "Este portfolio fue creado con React+Vite..",
+        "imagen": imagenProyecto4,
+        "linkWeb": "https://franco-guevara-portfolio.vercel.app/",
+        "linkGit": "https://github.com/FrancoLadronDeGuevara/franco-guevara-portfolio"
     }
 ]
