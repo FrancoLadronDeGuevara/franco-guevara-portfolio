@@ -49,8 +49,8 @@
 }
 
 .full-image img {
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 75%;
+    max-height: 75%;
     border: 2px solid white;
     border-radius: 5px;
     cursor: pointer;
@@ -62,6 +62,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .certificate-title{
@@ -81,5 +82,11 @@
     to {
         transform-origin: top center;
         transform: rotate(2deg); 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .certificate-title{
+        font-size: 12px
     }
 }
