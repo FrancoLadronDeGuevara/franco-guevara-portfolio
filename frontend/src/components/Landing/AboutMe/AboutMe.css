@@ -27,7 +27,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin: 1rem 0;
-    cursor: pointer;
 }
 
 .colors {
@@ -37,19 +36,6 @@
     top: 80px;
     left: 110px;
     animation: neon 0.5s ease-in-out infinite alternate;
-}
-
-.click {
-    position: absolute;
-    background-image: url("../../../assets/icons/click.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    right: 60px;
-    animation: clicker 1s infinite;
 }
 
 @keyframes neon {
@@ -64,19 +50,3 @@
     }
 }
 
-@keyframes clicker {
-    0% {
-        transform: rotateZ(-30deg);
-        transform: scale(1);
-    }
-
-    50% {
-        transform: rotateZ(-30deg);
-        transform: scale(1.3);
-    }
-
-    100% {
-        transform: rotateZ(-30deg);
-        transform: scale(1);
-    }
-}

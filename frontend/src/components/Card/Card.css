@@ -3,7 +3,6 @@
     width: 250px;
     transition: all 1s ease;
     position: relative;
-    cursor: pointer;
     transform-style: preserve-3d;
 }
 
@@ -87,11 +86,21 @@
 }
 
 .image {
+    position: relative;
     background: #aaa;
     width: 200px !important;
     height: 170px !important;
     top: 5px;
     border-radius: 5px;
+}
+
+.click-image{
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    top: -20px;
+    left: 170px;
+    animation: clicker 1s infinite;
 }
 
 .triangle {
@@ -141,3 +150,12 @@
     display: block;
 }
 
+@keyframes clicker {
+    100%{
+        transform: scale(1.2);
+    }
+    0%{
+        transform: scale(1);
+    }
+
+}

@@ -10,13 +10,6 @@
     backdrop-filter: blur(5px);
 }
 
-.logo-navbar{
-    padding: .8rem;
-}
-
-.text-navbar{
-    font-size: 10px;
-}
 
 .btn-navbar button{
     border: none;

@@ -49,7 +49,7 @@ export const listaProyectos = [
     {
         "id": 6,
         "name": "Portfolio",
-        "description": "Este portfolio fue creado con React+Vite..",
+        "description": "Este portfolio fue creado con React+Vite para el front, usando NES.css como dependencia para los estilos.",
         "imagen": imagenProyecto4,
         "linkWeb": "https://franco-guevara-portfolio.vercel.app/",
         "linkGit": "https://github.com/FrancoLadronDeGuevara/franco-guevara-portfolio"

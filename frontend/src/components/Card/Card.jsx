@@ -1,6 +1,7 @@
 import "./Card.css"
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import { useState } from "react";
+import clickImage from "../../assets/icons/click.png";
 
 export default function Card({ id, imagen, name, description, linkWeb, linkGit }) {
     const [isFlipped, setIsFlipped] = useState(false);
@@ -29,7 +30,8 @@ export default function Card({ id, imagen, name, description, linkWeb, linkGit }
                 </div>
                 <div className="part dark image_bg">
                     <div className="part image">
-                        <img src={imagen} alt="" className={`image ${isFlipped ? 'hidden' : ''}`} />
+                        <img src={imagen} alt={name} className={`image ${isFlipped ? 'hidden' : ''}`} />
+                        <img src={clickImage} alt="" className={`click-image ${isFlipped ? 'hidden' : ''}`}/>
                     </div>
                 </div>
                 <div className={`part triangle ${isFlipped ? 'hidden' : ''}`}></div>
