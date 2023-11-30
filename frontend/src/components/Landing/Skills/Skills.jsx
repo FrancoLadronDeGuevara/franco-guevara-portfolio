@@ -43,9 +43,9 @@ export default function Skills() {
                         <div>
                             <p className="softskill"><i className="nes-icon trophy"></i>Creativity</p>
                             <p className="softskill"><i className="nes-icon trophy"></i>Teamwork</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Commitment</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i>Problem-solving</p>
                             <p className="softskill"><i className="nes-icon trophy"></i>Critical Thinking</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Resolving Capacity</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i>Adaptability</p>
                         </div>
                     </div>
                 </section>
