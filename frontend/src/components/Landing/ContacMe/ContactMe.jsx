@@ -11,7 +11,7 @@ export default function ContactMe() {
         <>
             <section className="container-contact">
                 <div>
-                    <h2>Contactame!</h2>
+                    <h2>Contact Me!</h2>
                     <hr />
                     <div className="contact-left-info">
                         <div><i><AiOutlineMail /></i><p>francoguevara93@gmail.com</p></div>
@@ -23,11 +23,11 @@ export default function ContactMe() {
                     <form onSubmit={handleSubmit}>
                         <input className="nes-input" type="email" name="email" id="userEmail" placeholder="Email"  required/>
 
-                        <input className="nes-input" type="text" name="userName" id="userName" placeholder="Asunto"  required/>
+                        <input className="nes-input" type="text" name="userName" id="userName" placeholder="Subject"  required/>
 
-                        <textarea name="textarea" className="nes-textarea" id="userMessage" cols="50" rows="3" placeholder="Mensaje" required></textarea>
+                        <textarea name="textarea" className="nes-textarea" id="userMessage" cols="50" rows="3" placeholder="Leave a message" required></textarea>
 
-                        <input className="nes-btn is-success" type="submit" value="Enviar" />
+                        <input className="nes-btn is-success" type="submit" value="Submit" />
                     </form>
                 </div>
             </section>

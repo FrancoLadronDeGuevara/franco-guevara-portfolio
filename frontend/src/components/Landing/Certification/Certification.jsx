@@ -20,7 +20,7 @@ export default function Certification() {
         <>
             <div className="title-box">
                 <hr />
-                <span>Certificados</span>
+                <span>Certificates</span>
                 <hr />
             </div>
             <div className="container-certification">

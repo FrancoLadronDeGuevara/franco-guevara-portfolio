@@ -9,7 +9,7 @@ import scrCert from "../../../assets/certification/scrCert.png";
 export const certificationList = [
     {
         id: "1",
-        name: "Certificado Programador Web Full Stack en RollingCode School",
+        name: " Full Stack Web Developer in RollingCode School",
         img: rgCert,
     },
     {
@@ -24,17 +24,17 @@ export const certificationList = [
     },
     {
         id: "4",
-        name: "HTML y CSS (OpenBootCamp))",
+        name: "HTML and CSS (OpenBootCamp))",
         img: htmlCert,
     },
     {
         id: "5",
-        name: "Introducción a la Programación (OpenBootCamp)",
+        name: "Introduction to Programming (OpenBootCamp)",
         img: intrCert,
     },
     {
         id: "6",
-        name: "Conceptos Básicos de la Programación (OpenBootCamp)",
+        name: "Basic Concepts of Programming (OpenBootCamp)",
         img: concCert,
     },
 ]

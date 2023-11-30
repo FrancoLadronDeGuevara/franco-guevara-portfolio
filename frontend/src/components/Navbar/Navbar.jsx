@@ -6,6 +6,12 @@ import { useRef, useState } from "react";
 
 export default function Navbar() {
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
     const audio = useRef(null);
 
     const handleMusic = () => {
@@ -18,15 +24,27 @@ export default function Navbar() {
         setIsPlaying(!isPlaying);
     };
 
+
+
     return (
         <>
             <div className="container-navbar">
                 <div className="container-soundtrack" onClick={handleMusic}>
-                    {isPlaying? <img src={speakerOff} alt="Image speaker Off"/> : <img src={speakerOn} alt="Image speaker On"/>}
+                    {isPlaying ? <img src={speakerOff} alt="Image speaker Off" /> : <img src={speakerOn} alt="Image speaker On" />}
                 </div>
-                <div className="btn-navbar">
-                    <button><i className="nes-jp-logo"></i></button>
+                <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
+                    <button className="close-button" onClick={toggleMenu}>
+                        &times;
+                    </button>
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Sobre Nosotros</li>
+                        <li>Contacto</li>
+                    </ul>
                 </div>
+                <button className="menu-button" onClick={toggleMenu}>
+                    &#9776;
+                </button>
             </div>
         </>
     )

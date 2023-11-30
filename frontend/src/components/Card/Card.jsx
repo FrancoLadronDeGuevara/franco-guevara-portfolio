@@ -36,8 +36,8 @@ export default function Card({ id, imagen, name, description, linkWeb, linkGit }
                 </div>
                 <div className={`part triangle ${isFlipped ? 'hidden' : ''}`}></div>
                 <div className={`buttons-links ${isFlipped ? 'show' : ''}`}>
-                    <a href={linkGit} target={"_blank"} rel={"noreferrer"}><button className="nes-btn is-primary"><AiOutlineGithub fontSize={"20px"} /></button></a>
-                    <a href={linkWeb} target={"_blank"} rel={"noreferrer"}><button className="nes-btn is-success"><AiOutlineLink fontSize={"20px"} /></button></a>
+                    <a href={linkGit} target={"_blank"} rel={"noreferrer"}><button className="nes-btn is-primary"><AiOutlineGithub fontSize={"25px"} /></button></a>
+                    <a href={linkWeb} target={"_blank"} rel={"noreferrer"}><button className="nes-btn is-success"><AiOutlineLink fontSize={"25px"} /></button></a>
                 </div>
             </div>
         </>

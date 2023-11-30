@@ -10,7 +10,7 @@ export default function Skills() {
             <article className="container-skills">
                 <div className="title-box">
                     <hr />
-                    <span>Tecnologías</span>
+                    <span>Technologies</span>
                     <hr />
                 </div>
                 <section className="slider-skills">
@@ -41,11 +41,11 @@ export default function Skills() {
                     <div className="container-softskills nes-container is-rounded">
                         <h3 className="text-skills">Soft Skills</h3>
                         <div>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Creatividad</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Trabajo en Equipo</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Compromiso</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Pensamiento Crítico</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Capacidad Resolutiva</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i>Creativity</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i>Teamwork</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i>Commitment</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i>Critical Thinking</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i>Resolving Capacity</p>
                         </div>
                     </div>
                 </section>
