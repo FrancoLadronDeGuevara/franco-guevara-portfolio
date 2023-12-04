@@ -10,7 +10,7 @@ export default function Presentation() {
                 <img src={ImagenPerfil} alt="" className="left-side-img" />
             </div>
             <div className="container-right-side">
-                    <h3 className="text-top">FULL-STACK WEB DEVELOPER</h3>
+                    <h3 className="text-top">FRONT-END DEVELOPER</h3>
                     <h1 className="text-center">FRANCO GUEVARA</h1>
                     <h6 className="text-bottom">Creative Developer, Game Design student</h6>
             </div>

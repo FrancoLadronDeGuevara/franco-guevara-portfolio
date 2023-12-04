@@ -13,7 +13,7 @@ export default function AboutMe() {
             </div>
             <div className="container-about-me">
                 <div className="about-me-first">
-                    <p>I am a full-stack web developer who merges a passion for technology with a fascination for video games and design.</p>
+                    <p>I am a front-end developer who merges a passion for technology with a fascination for video games and design.</p>
                     <p>I focus on creating engaging and functional digital experiences for users, channeling my creativity and problem-solving skills.</p>
                 </div>
                 <div className="arcade-image">
