@@ -1,8 +1,10 @@
 import "./Navbar.css";
 import speakerOn from "../../assets/icons/speakerON.png";
 import speakerOff from "../../assets/icons/speakerOFF.png";
-import soundtrack from "../../assets/sounds/soundtrack.mp3"
+import soundtrack from "../../assets/sounds/soundtrack.mp3";
+import { characters } from "../Character/Characters";
 import { useRef, useState } from "react";
+import Character from "../Character/Character.jsx";
 
 export default function Navbar() {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -33,18 +35,31 @@ export default function Navbar() {
                     {isPlaying ? <img src={speakerOff} alt="Image speaker Off" /> : <img src={speakerOn} alt="Image speaker On" />}
                 </div>
                 <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <button className="close-button" onClick={toggleMenu}>
-                        &times;
-                    </button>
-                    <ul>
-                        <li>Inicio</li>
-                        <li>Sobre Nosotros</li>
-                        <li>Contacto</li>
-                    </ul>
+                    <p>Hidden characters</p>
+                    <hr />
+                    <div className="menu-characters">
+                        {
+                            characters.map(char => (
+                                <div key={char.id}>
+                                    {/* <p>{char.name}</p> */}
+                                    <img src={char.img} alt={`${char.name} Image`} />
+                                </div>
+                            ))
+                        }
+                    </div>
+
                 </div>
-                <button className="menu-button" onClick={toggleMenu}>
-                    &#9776;
-                </button>
+                {
+                    isMenuOpen ?
+                        (<button className="menu-button" onClick={toggleMenu}>
+                            <i className="nes-jp-logo"></i>
+                        </button>)
+                        :
+                        (<button className="menu-button" onClick={toggleMenu}>
+                            <i className="nes-logo"></i>
+                        </button>)
+                }
+
             </div>
         </>
     )

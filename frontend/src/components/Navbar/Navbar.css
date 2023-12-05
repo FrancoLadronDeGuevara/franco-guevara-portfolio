@@ -13,48 +13,38 @@
 
 .menu {
     position: fixed;
-    top: 0;
+    top: 62px;
     right: -300px;
-    /* Oculta el menú por defecto */
     width: 250px;
-    height: 100%;
-    background-color: #333;
-    padding-top: 60px;
+    height: 100vh;
+    background-color: #252525;
+    text-align: center;
     transition: right 0.3s ease;
 }
 
 .menu.open {
     right: 0;
-    /* Muestra el menú cuando está abierto */
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
+.menu p{
+    font-size: 12px;
+    margin: auto auto;
 }
 
-.menu li {
-    padding: 15px;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
+.menu hr{
+    margin: 0;
 }
 
-.close-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
 
 .menu-button {
     font-size: 24px;
     background: none;
     border: none;
     cursor: pointer;
-    color: #333;
+}
+
+.menu-characters{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

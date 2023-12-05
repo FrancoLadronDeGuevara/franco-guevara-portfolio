@@ -5,13 +5,12 @@
 .title-box{
     background-color: #11ADC1;
     padding: 5rem 0;
-    /* margin: 5rem auto; */
     display: flex;
     align-items: center;
 }
 
 .title-box span{
-    font-size: 28px;
+    font-size: 24px;
     text-align: center;
     text-shadow:
             2px 1px 0px hsl(0, 0%, 0%),
