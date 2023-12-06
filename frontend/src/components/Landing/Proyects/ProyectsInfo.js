@@ -5,7 +5,7 @@ import proyect4Image from "../../../assets/proyects/proyect4.png";
 import proyect5Image from "../../../assets/proyects/proyect5.png";
 import proyect6Image from "../../../assets/proyects/proyect6.png";
 
-export const listaProyectos = [
+export const proyectsList = [
     {
         "id": 1,
         "name": "VangaMovies",

@@ -2,11 +2,10 @@ import "./Navbar.css";
 import speakerOn from "../../assets/icons/speakerON.png";
 import speakerOff from "../../assets/icons/speakerOFF.png";
 import soundtrack from "../../assets/sounds/soundtrack.mp3";
-import { characters } from "../Character/Characters";
 import { useRef, useState } from "react";
-import Character from "../Character/Character.jsx";
+import CharacterButton from "../CharacterButton/CharacterButton";
 
-export default function Navbar() {
+export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -35,14 +34,13 @@ export default function Navbar() {
                     {isPlaying ? <img src={speakerOff} alt="Image speaker Off" /> : <img src={speakerOn} alt="Image speaker On" />}
                 </div>
                 <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <p>Hidden characters</p>
+                    <p>Hidden <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock}/></p>
                     <hr />
                     <div className="menu-characters">
                         {
-                            characters.map(char => (
-                                <div key={char.id}>
-                                    {/* <p>{char.name}</p> */}
-                                    <img src={char.img} alt={`${char.name} Image`} />
+                            unlockedCharacters.map((char, index) => (
+                                <div key={index}>
+                                    <img className="character-image" src={char.img} alt={`${char.name} Image`} />
                                 </div>
                             ))
                         }

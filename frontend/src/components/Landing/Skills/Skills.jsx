@@ -1,7 +1,8 @@
 import "./Skills.css"
 import { skillsData } from "./Skills";
+import CharacterButton from "../../CharacterButton/CharacterButton";
 
-export default function Skills() {
+export default function Skills({onCharacterUnlock}) {
 
     const techSkills = skillsData.slice(0, 5);
 
@@ -41,7 +42,7 @@ export default function Skills() {
                     <div className="container-softskills nes-container is-rounded">
                         <h3 className="text-skills">Soft Skills</h3>
                         <div>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Creativity</p>
+                            <p className="softskill"><i className="nes-icon trophy"></i><CharacterButton hidingIn="Creativity" onCharacterUnlock={onCharacterUnlock}/></p>
                             <p className="softskill"><i className="nes-icon trophy"></i>Teamwork</p>
                             <p className="softskill"><i className="nes-icon trophy"></i>Problem-solving</p>
                             <p className="softskill"><i className="nes-icon trophy"></i>Critical Thinking</p>

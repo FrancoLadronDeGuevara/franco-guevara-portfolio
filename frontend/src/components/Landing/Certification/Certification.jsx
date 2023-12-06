@@ -1,8 +1,9 @@
 import { certificationList } from "./Certification.js"
 import "./Certification.css"
 import { useState } from "react"
+import CharacterButton from "../../CharacterButton/CharacterButton.jsx";
 
-export default function Certification() {
+export default function Certification({onCharacterUnlock}) {
     const [isImageOpen, setImageOpen] = useState(false);
     const [selectedCertificate, setSelectedCertificate] = useState(null);
 
@@ -20,7 +21,7 @@ export default function Certification() {
         <>
             <div className="title-box">
                 <hr />
-                <span>Certificates</span>
+                <span><CharacterButton hidingIn="C" onCharacterUnlock={onCharacterUnlock}/>ertificates</span>
                 <hr />
             </div>
             <div className="container-certification">

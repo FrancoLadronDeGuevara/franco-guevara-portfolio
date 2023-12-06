@@ -1,12 +1,13 @@
 import "./Footer.css"
+import CharacterButton from "../CharacterButton/CharacterButton"
 
-export default function Footer(){
+export default function Footer({onCharacterUnlock}){
     return(
         <>  
         <hr />
             <div className="container-footer">
                 <p>
-                    ©2023 Franco Guevara
+                    ©2023 <CharacterButton hidingIn="Franco" onCharacterUnlock={onCharacterUnlock}/> Guevara
                 </p>
 
                 <div className="footer-icons">

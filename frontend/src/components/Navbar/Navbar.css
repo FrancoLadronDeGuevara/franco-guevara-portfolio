@@ -28,7 +28,7 @@
 
 .menu p{
     font-size: 12px;
-    margin: auto auto;
+    margin: .8rem auto;
 }
 
 .menu hr{
@@ -48,3 +48,4 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
