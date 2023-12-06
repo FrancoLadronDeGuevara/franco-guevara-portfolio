@@ -14,7 +14,7 @@ const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
             onCharacterUnlock(hidingIn);
 
             toast.success('Found one!', {
-                position: "top-center",
+                position: "bottom-center",
                 autoClose: 3000,
                 hideProgressBar: true,
                 closeOnClick: true,
