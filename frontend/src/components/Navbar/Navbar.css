@@ -9,15 +9,16 @@
     z-index: 99;
     padding: .5rem;
     backdrop-filter: blur(5px);
+    height: 50px;
 }
 
 .menu {
     position: fixed;
-    top: 62px;
+    top: 50px;
     right: -300px;
     width: 250px;
     height: 100vh;
-    background-color: #252525;
+    background-color: #050505;
     text-align: center;
     transition: right 0.3s ease;
 }
@@ -26,26 +27,28 @@
     right: 0;
 }
 
-.menu p{
+.menu p {
     font-size: 12px;
     margin: .8rem auto;
 }
 
-.menu hr{
+.menu hr {
     margin: 0;
 }
 
 
 .menu-button {
-    font-size: 24px;
-    background: none;
-    border: none;
     cursor: pointer;
 }
 
-.menu-characters{
+.menu-characters {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.container-soundtrack img,
+.menu-button {
+    width: 32px;
+    height: 32px;
+}

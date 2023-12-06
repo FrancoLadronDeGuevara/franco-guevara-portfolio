@@ -1,6 +1,8 @@
 import "./Navbar.css";
 import speakerOn from "../../assets/icons/speakerON.png";
 import speakerOff from "../../assets/icons/speakerOFF.png";
+import menuOpen from "../../assets/icons/menuOPEN.png";
+import menuClose from "../../assets/icons/menuCLOSE.png";
 import soundtrack from "../../assets/sounds/soundtrack.mp3";
 import { useRef, useState } from "react";
 import CharacterButton from "../CharacterButton/CharacterButton";
@@ -34,7 +36,7 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
                     {isPlaying ? <img src={speakerOff} alt="Image speaker Off" /> : <img src={speakerOn} alt="Image speaker On" />}
                 </div>
                 <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <p>Hidden <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock}/></p>
+                    <p>Find all 10 <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock} />!</p>
                     <hr />
                     <div className="menu-characters">
                         {
@@ -49,13 +51,9 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
                 </div>
                 {
                     isMenuOpen ?
-                        (<button className="menu-button" onClick={toggleMenu}>
-                            <i className="nes-jp-logo"></i>
-                        </button>)
+                        (<img src={menuClose} alt="" className="menu-button" onClick={toggleMenu} />)
                         :
-                        (<button className="menu-button" onClick={toggleMenu}>
-                            <i className="nes-logo"></i>
-                        </button>)
+                        (<img src={menuOpen} alt="" className="menu-button" onClick={toggleMenu} />)
                 }
 
             </div>

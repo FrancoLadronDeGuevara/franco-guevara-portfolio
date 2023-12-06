@@ -1,4 +1,6 @@
 import './App.css'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar/Navbar'
 import Presentation from './components/Landing/Presentation/Presentation'
 import Skills from './components/Landing/Skills/Skills.jsx'
@@ -46,6 +48,7 @@ function App() {
 
   return (
     <>
+      <ToastContainer style={{textAlign: "center", fontWeight: "bold"}}/>
       <Navbar unlockedCharacters={selectedCharacters} onCharacterUnlock={handleCharacterSelected}/>
       <Presentation onCharacterUnlock={handleCharacterSelected}/>
       <Skills onCharacterUnlock={handleCharacterSelected}/>

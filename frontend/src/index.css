@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Serif:opsz@8..144&display=swap');
+
+:root{
+    --toastify-color-success: #7DA9AD;
+    --toastify-font-family: 'Press Start 2P';
+
+}
+
+
+.Toastify__toast-body div{
+    font-size: 14px;
+    color: #455A77;
+    text-shadow:
+            2px 2px 0px hsla(0, 0%, 100%, 0.563),
+            2px 2px 0px rgb(255, 255, 255);
+}
