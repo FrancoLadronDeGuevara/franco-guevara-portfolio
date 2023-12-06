@@ -96,11 +96,11 @@
 
 .click-image{
     position: absolute;
-    width: 20px;
-    height: 30px;
-    top: -70px;
-    left: -20px;
-    animation: clicker 1s infinite;
+    width: 80px;
+    height: 20px;
+    top: 155px;
+    left: 120px;
+    /* animation: clicker 1s infinite; */
 }
 
 .triangle {
