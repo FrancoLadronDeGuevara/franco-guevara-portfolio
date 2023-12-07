@@ -4,7 +4,6 @@ import CharacterButton from "../CharacterButton/CharacterButton"
 export default function Footer({onCharacterUnlock}){
     return(
         <>  
-        <hr />
             <div className="container-footer">
                 <p>
                     ©2023 <CharacterButton hidingIn="Franco" onCharacterUnlock={onCharacterUnlock}/> Guevara

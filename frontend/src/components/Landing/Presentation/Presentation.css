@@ -73,6 +73,7 @@
     .container{
         height: 60vh;
         flex-direction: column;
+        margin-top: 3rem;
     }
 
     .container-right-side {

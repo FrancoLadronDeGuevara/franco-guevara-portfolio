@@ -13,7 +13,7 @@ const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
             setUnlocked(true);
             onCharacterUnlock(hidingIn);
 
-            toast.success('Found one!', {
+            toast.success('New character unlocked!', {
                 position: "bottom-center",
                 autoClose: 3000,
                 hideProgressBar: true,
@@ -22,7 +22,6 @@ const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
                 draggable: false,
                 progress: undefined,
                 theme: "colored",
-                icon: <i className='nes-icon trophy'></i>
                 });
 
             soundCharacterFind.play();

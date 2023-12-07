@@ -1,11 +1,8 @@
 import "./Navbar.css";
-import speakerOn from "../../assets/icons/speakerON.png";
-import speakerOff from "../../assets/icons/speakerOFF.png";
-import menuOpen from "../../assets/icons/menuOPEN.png";
-import menuClose from "../../assets/icons/menuCLOSE.png";
 import soundtrack from "../../assets/sounds/soundtrack.mp3";
-import { useRef, useState } from "react";
 import CharacterButton from "../CharacterButton/CharacterButton";
+import questionIcon from "../../assets/icons/question.png";
+import { useRef, useState } from "react";
 
 export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -31,12 +28,17 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
 
     return (
         <>
-            <div className="container-navbar">
+            <div className="container-navbar nes-container is-rounded">
                 <div className="container-soundtrack" onClick={handleMusic}>
-                    {isPlaying ? <img src={speakerOff} alt="Image speaker Off" /> : <img src={speakerOn} alt="Image speaker On" />}
+                    {isPlaying ? <span>Music: OFF</span> : <span>Music: ON</span>}
                 </div>
-                <div className={`menu ${isMenuOpen ? 'open' : ''}`}>
-                    <p>Find all 10 <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock} />!</p>
+                <div className={`menu ${isMenuOpen ? 'open nes-container is-rounded' : ''}`}>
+                    {
+                        unlockedCharacters.length == 10 ?
+                            (<p>You found all! Congrats!</p>)
+                            :
+                            (<p>Find all 10 <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock} />!</p>)
+                    }
                     <hr />
                     <div className="menu-characters">
                         {
@@ -46,14 +48,17 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
                                 </div>
                             ))
                         }
+                        <div className="test">
+                        <img src={questionIcon} />
+                        <span>"5" is a button</span>
+                        </div>
                     </div>
-
                 </div>
                 {
                     isMenuOpen ?
-                        (<img src={menuClose} alt="" className="menu-button" onClick={toggleMenu} />)
+                        <span className="menu-text" onClick={toggleMenu}>PAUSED</span>
                         :
-                        (<img src={menuOpen} alt="" className="menu-button" onClick={toggleMenu} />)
+                        <span className="menu-text" onClick={toggleMenu}>PLAY</span>
                 }
 
             </div>
