@@ -1,21 +1,24 @@
 .container-hints {
     width: 100%;
-    position: relative;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container-hints span {
     font-size: 10px;
-    position: absolute;
+    /* position: absolute;
     left: 30px;
-    top: 10px;
+    top: 10px; */
 }
 
 .question-icon {
     width: 20px;
     height: 20px;
-    position: absolute;
+    /* position: absolute;
     left: 5px;
-    top: 6px;
+    top: 6px; */
     animation: spin 5s linear infinite;
 }
 
