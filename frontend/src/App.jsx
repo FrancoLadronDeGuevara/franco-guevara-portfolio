@@ -19,6 +19,8 @@ import kratos from "./assets/characters/kratos.png";
 import mario from "./assets/characters/mario.png";
 import sonic from "./assets/characters/sonic.png";
 import subzero from "./assets/characters/subzero.png";
+import laracroft from "./assets/characters/laracroft.png";
+import earthwormjim from "./assets/characters/earthworm.png";
 import { useState } from 'react'
 
 
@@ -36,6 +38,8 @@ function App() {
     { hidingIn: "2D", name: "Mario Bross", img: mario },
     { hidingIn: "games", name: "Sonic", img: sonic },
     { hidingIn: "characters", name: "Sub-Zero", img: subzero },
+    { hidingIn: "lo", name: "Lara Croft", img: laracroft },
+    { hidingIn: "Me", name: "Earthworm Jim", img: earthwormjim },
   ]
 
   const handleCharacterSelected = (characterHidingIn) => {

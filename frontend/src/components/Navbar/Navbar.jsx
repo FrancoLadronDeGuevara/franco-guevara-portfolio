@@ -33,21 +33,18 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock, characte
                 </div>
                 <div className={`menu ${isMenuOpen && 'open nes-container is-rounded'}`}>
                     {
-                        unlockedCharacters.length == 10 ?
+                        unlockedCharacters.length == 12 ?
                             (<p>You found all! Congrats!</p>)
                             :
-                            (<p>Find all 10 <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock} />!</p>)
+                            (<p>Find all 12 <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock} />!</p>)
                     }
                     <hr />
-                    <div className="container-menu-characters">
-                        <div className="menu-characters">
-                            {characters.map((char, index) => (
-                                <div key={index} style={{ filter: unlockedCharacters.some((unlockedChar) => unlockedChar.hidingIn === char.hidingIn) ? 'contrast(100%)' : 'contrast(0%)' }}>
-                                    <img className="character-image" src={char.img} alt={`${char.name} Image`} />
-                                </div>
-                            ))}
-                        </div>
-
+                    <div className="menu-characters">
+                        {characters.map((char, index) => (
+                            <div key={index} style={{ filter: unlockedCharacters.some((unlockedChar) => unlockedChar.hidingIn === char.hidingIn) ? 'contrast(100%)' : 'contrast(0%)' }}>
+                                <img className="character-image" src={char.img} alt={`${char.name} Image`} />
+                            </div>
+                        ))}
                     </div>
                 </div>
                 {

@@ -11,7 +11,7 @@ export default function Skills({onCharacterUnlock}) {
             <article className="container-skills">
                 <div className="title-box">
                     <hr />
-                    <span>Technologies</span>
+                    <span>Techno<CharacterButton hidingIn="lo" onCharacterUnlock={onCharacterUnlock} />gies</span>
                     <hr />
                 </div>
                 <section className="slider-skills">

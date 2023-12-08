@@ -42,12 +42,6 @@
     margin: 0 0 1rem 0;
 }
 
-/* .container-menu-characters{
-    height: calc(100vh - 200px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 
 .menu-characters {
     height: 100%;
@@ -56,7 +50,16 @@
     flex-wrap: wrap;
 }
 
-.character-image{
-    margin-bottom: 1rem;
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+    .character-image{
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width:768px) {
+    .character-image{
+        width: 80px;
+    }
 }
 

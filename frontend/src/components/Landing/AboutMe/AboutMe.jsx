@@ -9,7 +9,7 @@ export default function AboutMe({onCharacterUnlock}) {
         <>
             <div className="title-box">
                 <hr />
-                <span>About Me</span>
+                <span>About <CharacterButton hidingIn="Me" onCharacterUnlock={onCharacterUnlock} /></span>
                 <hr />
             </div>
             <div className="container-about-me">
