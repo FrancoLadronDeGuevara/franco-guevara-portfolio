@@ -15,7 +15,7 @@ const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
 
             toast.success('New character unlocked!', {
                 position: "bottom-center",
-                autoClose: 3000,
+                autoClose: 2000,
                 hideProgressBar: true,
                 closeOnClick: true,
                 pauseOnHover: false,

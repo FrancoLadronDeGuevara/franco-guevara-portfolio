@@ -49,7 +49,7 @@ function App() {
   return (
     <>
       <ToastContainer style={{textAlign: "center", fontWeight: "bold"}}/>
-      <Navbar unlockedCharacters={selectedCharacters} onCharacterUnlock={handleCharacterSelected}/>
+      <Navbar unlockedCharacters={selectedCharacters} onCharacterUnlock={handleCharacterSelected} characters={characters}/>
       <Presentation onCharacterUnlock={handleCharacterSelected}/>
       <Skills onCharacterUnlock={handleCharacterSelected}/>
       <AboutMe onCharacterUnlock={handleCharacterSelected}/>

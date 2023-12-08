@@ -3,8 +3,9 @@ import soundtrack from "../../assets/sounds/soundtrack.mp3";
 import CharacterButton from "../CharacterButton/CharacterButton";
 import questionIcon from "../../assets/icons/question.png";
 import { useRef, useState } from "react";
+import Hints from "../Hints/Hints";
 
-export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
+export default function Navbar({ unlockedCharacters, onCharacterUnlock, characters }) {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -30,7 +31,7 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
         <>
             <div className="container-navbar nes-container is-rounded">
                 <div className="container-soundtrack" onClick={handleMusic}>
-                    {isPlaying ? <span>Music: OFF</span> : <span>Music: ON</span>}
+                    {isPlaying ? <span>Music: ON</span> : <span>Music: OFF</span>}
                 </div>
                 <div className={`menu ${isMenuOpen ? 'open nes-container is-rounded' : ''}`}>
                     {
@@ -40,25 +41,23 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock }) {
                             (<p>Find all 10 <CharacterButton hidingIn="characters" onCharacterUnlock={onCharacterUnlock} />!</p>)
                     }
                     <hr />
-                    <div className="menu-characters">
-                        {
-                            unlockedCharacters.map((char, index) => (
-                                <div key={index}>
+                    <div className="container-menu-characters">
+                        <div className="menu-characters">
+                            {characters.map((char, index) => (
+                                <div key={index} style={{ filter: unlockedCharacters.some((unlockedChar) => unlockedChar.hidingIn === char.hidingIn) ? 'contrast(100%)' : 'contrast(0%)' }}>
                                     <img className="character-image" src={char.img} alt={`${char.name} Image`} />
                                 </div>
-                            ))
-                        }
-                        <div className="test">
-                        <img src={questionIcon} />
-                        <span>"5" is a button</span>
+                            ))}
                         </div>
+
+                        <Hints/>
                     </div>
                 </div>
                 {
                     isMenuOpen ?
                         <span className="menu-text" onClick={toggleMenu}>PAUSED</span>
                         :
-                        <span className="menu-text" onClick={toggleMenu}>PLAY</span>
+                        <span className="menu-text" onClick={toggleMenu}>MENU</span>
                 }
 
             </div>
