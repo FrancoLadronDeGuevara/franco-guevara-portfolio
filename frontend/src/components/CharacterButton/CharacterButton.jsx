@@ -2,6 +2,7 @@ import { useState } from 'react';
 import findCharacter from "../../assets/sounds/find.mp3";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "./CharacterButton.css"
 
 const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
     const [unlocked, setUnlocked] = useState(false);
@@ -30,7 +31,7 @@ const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
 
     return (
         <>
-            <span onClick={handleButtonClick} style={{cursor:"pointer"}}>
+            <span onClick={handleButtonClick} className={`${unlocked || "shine"}`}>
                 {hidingIn}
             </span>
         </>

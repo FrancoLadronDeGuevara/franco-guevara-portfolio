@@ -39,15 +39,15 @@
 }
 
 .menu hr {
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
-.container-menu-characters{
-    height: calc(100vh - 150px);
+/* .container-menu-characters{
+    height: calc(100vh - 200px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} */
 
 .menu-characters {
     height: 100%;
@@ -57,5 +57,6 @@
 }
 
 .character-image{
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
+

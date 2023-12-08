@@ -1,9 +1,7 @@
 import "./Navbar.css";
 import soundtrack from "../../assets/sounds/soundtrack.mp3";
 import CharacterButton from "../CharacterButton/CharacterButton";
-import questionIcon from "../../assets/icons/question.png";
 import { useRef, useState } from "react";
-import Hints from "../Hints/Hints";
 
 export default function Navbar({ unlockedCharacters, onCharacterUnlock, characters }) {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -33,7 +31,7 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock, characte
                 <div className="container-soundtrack" onClick={handleMusic}>
                     {isPlaying ? <span>Music: ON</span> : <span>Music: OFF</span>}
                 </div>
-                <div className={`menu ${isMenuOpen ? 'open nes-container is-rounded' : ''}`}>
+                <div className={`menu ${isMenuOpen && 'open nes-container is-rounded'}`}>
                     {
                         unlockedCharacters.length == 10 ?
                             (<p>You found all! Congrats!</p>)
@@ -50,7 +48,6 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock, characte
                             ))}
                         </div>
 
-                        <Hints/>
                     </div>
                 </div>
                 {
