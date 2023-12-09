@@ -15,11 +15,11 @@ import logoGodot from "../../../assets/Slider/godot.png";
 import logoGit from "../../../assets/Slider/git.png";
 
 export const skillsData = [
-    { name: 'HTML', logo: logoHtml, level: 5 },
-    { name: 'CSS', logo: logoCss, level: 5 },
-    { name: 'JavaScript', logo: logoJavascript, level: 4 },
-    { name: 'ReactJS', logo: logoReact, level: 3 },
-    { name: 'Figma', logo: logoFigma, level: 2 },
+    { name: 'HTML', logo: logoHtml},
+    { name: 'CSS', logo: logoCss},
+    { name: 'JavaScript', logo: logoJavascript},
+    { name: 'ReactJS', logo: logoReact},
+    { name: 'Figma', logo: logoFigma},
     { name: 'Bootstrap', logo: logoBootstrap},
     { name: 'Ant Design', logo: logoAnt},
     { name: 'React Boostrap', logo: logoReactBoostrap},

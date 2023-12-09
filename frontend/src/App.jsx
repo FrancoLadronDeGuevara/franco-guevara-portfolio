@@ -32,7 +32,7 @@ function App() {
     { hidingIn: "Franco", name: "Batman", img: batman },
     { hidingIn: "C", name: "Darth Vader", img: darthvader },
     { hidingIn: "s", name: "Donald Duck", img: donald },
-    { hidingIn: "Creativity", name: "Homer Simpson", img: homer },
+    { hidingIn: "Skills", name: "Homer Simpson", img: homer },
     { hidingIn: "5", name: "Indiana Jones", img: indiana },
     { hidingIn: "!", name: "Kratos", img: kratos },
     { hidingIn: "2D", name: "Mario Bross", img: mario },
@@ -52,15 +52,18 @@ function App() {
 
   return (
     <>
-      <ToastContainer style={{textAlign: "center", fontWeight: "bold"}}/>
-      <Navbar unlockedCharacters={selectedCharacters} onCharacterUnlock={handleCharacterSelected} characters={characters}/>
-      <Presentation onCharacterUnlock={handleCharacterSelected}/>
-      <Skills onCharacterUnlock={handleCharacterSelected}/>
-      <AboutMe onCharacterUnlock={handleCharacterSelected}/>
-      <Proyects onCharacterUnlock={handleCharacterSelected}/>
-      <Certification onCharacterUnlock={handleCharacterSelected}/>
-      <ContactMe onCharacterUnlock={handleCharacterSelected} />
-      <Footer onCharacterUnlock={handleCharacterSelected}/>
+      <ToastContainer style={{ textAlign: "center", fontWeight: "bold" }} />
+      <Navbar unlockedCharacters={selectedCharacters} onCharacterUnlock={handleCharacterSelected} characters={characters} />
+      <Presentation onCharacterUnlock={handleCharacterSelected} />
+      <Skills onCharacterUnlock={handleCharacterSelected} />
+      <div style={{maxWidth: "1200px", margin: "auto auto"}}>
+        <AboutMe onCharacterUnlock={handleCharacterSelected} />
+        <Proyects onCharacterUnlock={handleCharacterSelected} />
+        <Certification onCharacterUnlock={handleCharacterSelected} />
+        <ContactMe onCharacterUnlock={handleCharacterSelected} />
+      </div>
+
+      <Footer onCharacterUnlock={handleCharacterSelected} />
     </>
   )
 }

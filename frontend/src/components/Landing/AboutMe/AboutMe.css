@@ -1,52 +1,82 @@
 .container-about-me {
-    background-color: #11ADC1;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    color: black;
 }
 
-.about-me-first p,
-.about-me-last p {
-    text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0;
-    text-shadow:
-        2px 1px 0px hsl(0, 0%, 0%),
-        4px 4px 2px rgb(16, 9, 9);
+.container-ballons{
+    width: 100%;
 }
+
+.nes-balloon{
+    min-width: 300px;
+    max-width: 700px;
+    font-size: 12px;
+}
+
 
 .arcade-image {
     position: relative;
-    width: 300px;
-    height: 300px;
-    background-image: url("../../../assets/icons/arcade.png");
-    background-position: center;
-    background-size: contain;
+    background-image: url("../../../assets/arcade/arcadeGame.png");
+    width: 310px;
+    height: 500px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin: 1rem 0;
+    background-position: center;
+    padding: 125px 90px 260px 80px;
+    cursor: pointer;
+    /* z-index: 99; */
 }
 
-.colors {
+.pacman-image {
     position: absolute;
-    width: 80px;
-    height: 50px;
-    top: 80px;
-    left: 110px;
-    animation: neon 0.5s ease-in-out infinite alternate;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: url("../../../assets/arcade/pacman.gif");
+    background-size: 100% 100%;
+    z-index: -99;
 }
 
-@keyframes neon {
-    from {
-        box-shadow: 0 0 10px #00000085, 0 0 20px #00000085, 0 0 30px #00000085, 0 0 40px #ff9900,
-            0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+.insert-coin {
+    color: white;
+    font-size: 6px;
+    animation: blink 1s linear infinite;
+}
+
+.hide-text {
+    display: none;
+}
+
+.filter {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 0 .2rem;
+    width: 112px;
+    height: 95px;
+    z-index: -99;
+}
+
+
+@media (max-width: 768px) {
+    .container-about-me{
+        flex-direction: column;
     }
 
-    to {
-        box-shadow: 0 0 5px #00000085, 0 0 10px #00000085, 0 0 15px #00000085, 0 0 20px #ff9900,
-            0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+    .nes-balloon{
+        width: 98%;
+    }
+
+    .filter {
+        width: 135px;
     }
 }
+
 

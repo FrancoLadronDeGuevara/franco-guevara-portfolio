@@ -41,7 +41,7 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock, characte
                     <hr />
                     <div className="menu-characters">
                         {characters.map((char, index) => (
-                            <div key={index} style={{ filter: unlockedCharacters.some((unlockedChar) => unlockedChar.hidingIn === char.hidingIn) ? 'contrast(100%)' : 'contrast(0%)' }}>
+                            <div key={index} style={{ filter: unlockedCharacters.some((unlockedChar) => unlockedChar.hidingIn === char.hidingIn) ? 'contrast(100%) ' : 'contrast(0%) brightness(0%)' }}>
                                 <img className="character-image" src={char.img} alt={`${char.name} Image`} />
                             </div>
                         ))}

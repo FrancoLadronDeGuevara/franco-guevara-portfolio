@@ -1,10 +1,13 @@
 import "./Skills.css"
 import { skillsData } from "./Skills";
 import CharacterButton from "../../CharacterButton/CharacterButton";
+import { useEffect } from "react";
 
-export default function Skills({onCharacterUnlock}) {
+export default function Skills({ onCharacterUnlock }) {
+    const softSkills = ["Creativity", "Teamwork", "Problem-solving", "Critical Thinking", "Adaptability", "Communication", "Time Management", "Initiative"]
+    const hardSkills = ["HTML/CSS", "JavaScript", "ReactJS", "Scrum methodology", "Responsive Design", "CSS Frameworks", "Package Managers", "Version Control/Git"]
 
-    const techSkills = skillsData.slice(0, 5);
+
 
     return (
         <>
@@ -29,24 +32,18 @@ export default function Skills({onCharacterUnlock}) {
                     </div>
                 </section>
 
-                <section className="container-tech-softskills">
-                    <div className="container-tech nes-container is-rounded">
-                        <h3 className="text-skills">Skills</h3>
-                        {techSkills.map((techSkill, index) => (
-                            <div key={index} className="skill-bar-container">
-                                <span className="skill-name">{techSkill.name}</span>
-                                <span className={`skill-bar level${techSkill.level}`}></span>
-                            </div>
-                        ))}
+                <section className="container-hard-softskills">
+                    
+                    <div className="container-softskills nes-container is-rounded">
+                        <h3 className="text-skills">Hard Skills</h3>
+                        <div>
+                            {hardSkills.map((hardskill, index) => (<p key={index} className="softskill">{hardskill}</p>))}
+                        </div>
                     </div>
                     <div className="container-softskills nes-container is-rounded">
-                        <h3 className="text-skills">Soft Skills</h3>
+                        <h3 className="text-skills">Soft <CharacterButton hidingIn="Skills" onCharacterUnlock={onCharacterUnlock} /></h3>
                         <div>
-                            <p className="softskill"><i className="nes-icon trophy"></i><CharacterButton hidingIn="Creativity" onCharacterUnlock={onCharacterUnlock}/></p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Teamwork</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Problem-solving</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Critical Thinking</p>
-                            <p className="softskill"><i className="nes-icon trophy"></i>Adaptability</p>
+                            {softSkills.map((softskill, index) => (<p key={index} className="softskill">{softskill}</p>))}
                         </div>
                     </div>
                 </section>
