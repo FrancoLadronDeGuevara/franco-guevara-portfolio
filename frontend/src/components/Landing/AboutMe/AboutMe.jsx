@@ -18,7 +18,8 @@ export default function AboutMe({ onCharacterUnlock }) {
                 <span>About <CharacterButton hidingIn="Me" onCharacterUnlock={onCharacterUnlock} /></span>
                 <hr />
             </div>
-            <div className="container-about-me">
+            
+            <section className="container-about-me">
                 <div className="container-ballons">
                     <div className="nes-balloon from-left">
                         <p>I am a front-end developer who merges a passion for technology with a fascination for old video <CharacterButton hidingIn="games" onCharacterUnlock={onCharacterUnlock} /> and design.
@@ -31,17 +32,13 @@ export default function AboutMe({ onCharacterUnlock }) {
                     </div>
                 </div>
 
-
                 <div className="arcade-image" onClick={handleArcadeImage}>
                     <div className={`filter ${arcadeOn && 'pacman-image'}`}>
                         <span className={`insert-coin ${arcadeOn && 'hide-text'}`}>INSERT COIN</span>
                     </div>
                 </div>
 
-
-
-
-            </div>
+            </section>
 
 
         </>

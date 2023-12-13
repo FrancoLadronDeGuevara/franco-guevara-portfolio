@@ -1,12 +1,13 @@
 .container-proyects{
-    background-color: #11ADC1;
+    max-width: 1200px;
+    margin: auto auto;
 }
 
 .proyects{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {

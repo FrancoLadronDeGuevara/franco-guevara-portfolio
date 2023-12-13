@@ -24,13 +24,14 @@ export default function Certification({onCharacterUnlock}) {
                 <span><CharacterButton hidingIn="C" onCharacterUnlock={onCharacterUnlock}/>ertificates</span>
                 <hr />
             </div>
-            <div className="container-certification">
+
+            <section className="container-certification">
                 {certificationList.map(certificate => (
-                    <div key={certificate.id} className="window" onClick={() => openImage(certificate)}>
+                    <article key={certificate.id} className="window" onClick={() => openImage(certificate)}>
                         <img src={certificate.img} alt="" className="cert-image" />
-                    </div>
+                    </article>
                 ))}
-            </div>
+            </section>
 
             <div className={`full-image ${isImageOpen ? 'open' : ''}`} onClick={closeImage}>
                 {isImageOpen && selectedCertificate && (

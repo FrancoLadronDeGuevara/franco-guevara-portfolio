@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './components/Navbar/Navbar'
@@ -21,7 +22,7 @@ import sonic from "./assets/characters/sonic.png";
 import subzero from "./assets/characters/subzero.png";
 import laracroft from "./assets/characters/laracroft.png";
 import earthwormjim from "./assets/characters/earthworm.png";
-import { useState } from 'react'
+import Modal from './components/Modal/Modal';
 
 
 function App() {
@@ -56,13 +57,10 @@ function App() {
       <Navbar unlockedCharacters={selectedCharacters} onCharacterUnlock={handleCharacterSelected} characters={characters} />
       <Presentation onCharacterUnlock={handleCharacterSelected} />
       <Skills onCharacterUnlock={handleCharacterSelected} />
-      <div style={{maxWidth: "1200px", margin: "auto auto"}}>
-        <AboutMe onCharacterUnlock={handleCharacterSelected} />
-        <Proyects onCharacterUnlock={handleCharacterSelected} />
-        <Certification onCharacterUnlock={handleCharacterSelected} />
-        <ContactMe onCharacterUnlock={handleCharacterSelected} />
-      </div>
-
+      <AboutMe onCharacterUnlock={handleCharacterSelected} />
+      <Proyects onCharacterUnlock={handleCharacterSelected} />
+      <Certification onCharacterUnlock={handleCharacterSelected} />
+      <ContactMe onCharacterUnlock={handleCharacterSelected} />
       <Footer onCharacterUnlock={handleCharacterSelected} />
     </>
   )

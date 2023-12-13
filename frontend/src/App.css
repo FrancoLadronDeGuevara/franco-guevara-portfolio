@@ -32,14 +32,15 @@ h1, h2, h3, h6{
 }
 
 .title-box{
-    padding: 5rem 0;
+    margin: 5rem 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    background-color: #0A7F8B;
 }
 
 .title-box span{
     font-size: 40px;
-    text-align: center;
     text-shadow:
             2px 1px 0px hsl(0, 0%, 0%),
             4px 4px 2px rgb(16, 9, 9);
@@ -47,7 +48,8 @@ h1, h2, h3, h6{
 
 .title-box hr{
     display: inline;
-    width: 100%;
+    width: 99%;
+    border-color: black;
 }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {

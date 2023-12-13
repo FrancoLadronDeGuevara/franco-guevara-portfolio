@@ -47,10 +47,14 @@
     }
 }
 
+.container-left-side{
+    padding: 0 !important;
+    height: 200px;
+}
 
 .left-side-img {
     max-width: 310px;
-    box-shadow: -10px 60px 30px -50px black;
+    /* box-shadow: -10px 60px 30px -50px black; */
 }
 
 
