@@ -38,6 +38,7 @@ export const useForm = (initialForm, validateForm) => {
                 .then((res) => {
                     setLoading(false);
                     setResponse(true);
+                    setForm(initialForm);
 
                     setTimeout(()=>{
                         setResponse(false)
