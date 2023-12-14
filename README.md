@@ -75,6 +75,8 @@ Please ensure you have the following dependencies installed on your system:
 
 `- ℹ️ react-toastify`
 
+`- ℹ️ framer-motion`
+
 ### 🔧 Installation
 
 1. Clone the franco-guevara-portfolio repository:
