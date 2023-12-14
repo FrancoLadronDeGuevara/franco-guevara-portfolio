@@ -1,7 +1,6 @@
 import "./Skills.css"
 import { skillsData } from "./Skills";
 import CharacterButton from "../../CharacterButton/CharacterButton";
-import { motion } from "framer-motion";
 
 export default function Skills({ onCharacterUnlock }) {
     const softSkills = ["Creativity", "Teamwork", "Problem-solving", "Critical Thinking", "Adaptability", "Communication", "Time Management", "Initiative"]
