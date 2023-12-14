@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -8,7 +7,7 @@
     padding: .5rem;
 }
 
-.parallax{
+.parallax {
     position: absolute;
     background-image: url("../../../assets/profile/bgprofile.png");
     background-size: cover;
@@ -47,90 +46,186 @@
     }
 }
 
-.container-left-side{
-    padding: 0 !important;
-    height: 200px;
-}
 
-.left-side-img {
-    max-width: 310px;
-    /* box-shadow: -10px 60px 30px -50px black; */
-}
-
-
-.container-right-side {
+.container-image-presentation {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: .8rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-left {
+    margin-top: 5rem;
     height: 300px;
 }
 
+.text-top {
+    font-size: 30px;
+}
 
-.right-side-bottom-left,
-.right-side-bottom-right {
-    width: 220px;
+.text-center {
+    font-size: 50px;
+}
+
+.text-bottom {
+    margin-top: 6rem;
+    font-size: 20px;
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
-    .container{
+    .container {
         height: 60vh;
-        flex-direction: column;
         margin-top: 3rem;
     }
 
-    .container-right-side {
-        padding: .5rem;
-        height: 200px;
+    .container-image-presentation {
+        flex-direction: column-reverse;
     }
 
-    .left-side-img {
-        max-width: 180px;
+    .right-side-img{
+        margin-top: 9rem;
+        width: 120px;
     }
 
-    .right-side-bottom-left,
-    .right-side-bottom-right {
-        width: auto;
+    .container-left {
+        margin-top: 2rem;
     }
+
+    .text-top {
+        font-size: 10px;
+    }
+
+    .text-center {
+        font-size: 18px;
+    }
+
+    .text-bottom {
+        margin-top: 3rem;
+        font-size: 7px;
+    }
+
 }
 
 @media (min-width: 426px) and (max-width: 576px) {
-    .container{
+    .container {
         height: 70vh;
+        margin-top: 3rem;
     }
 
-    .container-right-side {
-        padding: .5rem;
-        height: 250px;
+    .container-image-presentation {
+        flex-direction: column-reverse;
     }
 
-    .left-side-img {
-        max-width: 180px;
+    .right-side-img{
+        margin-top: 9rem;
+        width: 150px;
     }
 
-    .right-side-bottom-left,
-    .right-side-bottom-right {
-        width: auto;
+    .container-left {
+        margin-top: 3rem;
     }
+
+    .text-top {
+        font-size: 12px;
+    }
+
+    .text-center {
+        font-size: 22px;
+    }
+
+    .text-bottom {
+        margin-top: 1.5rem;
+        font-size: 9px;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .container{
+    .container {
         height: 80vh;
     }
 
-    .container-right-side {
-        padding: .5rem;
-        height: 300px;
+    .container-image-presentation {
+        flex-direction: column-reverse;
     }
 
-    .left-side-img {
-        max-width: 220px;
+    .right-side-img{
+        margin-top: 13rem;
+        width: 200px;
     }
 
-    .right-side-bottom-left,
-    .right-side-bottom-right {
-        width: 150px;
+    .container-left {
+        margin-top: 2rem;
+    }
+
+    .text-top {
+        font-size: 12px;
+    }
+
+    .text-center {
+        font-size: 22px;
+    }
+
+    .text-bottom {
+        margin-top: 1.5rem;
+        font-size: 9px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .right-side-img{
+        width: 300px;
+    }
+
+    .container-left {
+        margin-top: 10rem;
+    }
+
+    .text-top {
+        font-size: 15px;
+    }
+
+    .text-center {
+        font-size: 25px;
+    }
+
+    .text-bottom {
+        margin-top: 6rem;
+        font-size: 9px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container-left {
+        margin-top: 8rem;
+    }
+
+    .text-top {
+        font-size: 25px;
+    }
+
+    .text-center {
+        font-size: 40px;
+    }
+
+    .text-bottom {
+        margin-top: 6rem;
+        font-size: 16px;
+    }
+}
+
+@media (max-height: 375px){
+    .container-image-presentation {
+        flex-direction: row;
+    }
+
+    .container-left {
+        margin-top: 12rem;
+    }
+
+    .right-side-img{
+        margin: 0;
     }
 }

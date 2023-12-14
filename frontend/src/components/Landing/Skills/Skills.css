@@ -67,7 +67,7 @@
     }
 }
 
-.container-hard-softskills{
+.container-hard-softskills {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,9 +99,10 @@
 
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .container-hard-softskills{
+    .container-hard-softskills {
         flex-direction: column;
     }
+
     .container-softskills {
         width: 80vw;
         margin-top: 2rem;
@@ -137,7 +138,7 @@
         font-size: 13px;
     }
 
-    .container-softskills{
+    .container-softskills {
         width: 350px;
     }
 }

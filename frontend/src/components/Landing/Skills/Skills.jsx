@@ -1,7 +1,7 @@
 import "./Skills.css"
 import { skillsData } from "./Skills";
 import CharacterButton from "../../CharacterButton/CharacterButton";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Skills({ onCharacterUnlock }) {
     const softSkills = ["Creativity", "Teamwork", "Problem-solving", "Critical Thinking", "Adaptability", "Communication", "Time Management", "Initiative"]
@@ -33,19 +33,28 @@ export default function Skills({ onCharacterUnlock }) {
                 </section>
 
                 <section className="container-hard-softskills">
-                    
-                    <div className="container-softskills nes-container is-rounded">
+
+                    <motion.div 
+                        initial={{ opacity: 0, y: 150 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 3 }}
+                        className="container-softskills nes-container is-rounded">
                         <h3 className="text-skills">Hard Skills</h3>
                         <div>
                             {hardSkills.map((hardskill, index) => (<p key={index} className="softskill">{hardskill}</p>))}
                         </div>
-                    </div>
-                    <div className="container-softskills nes-container is-rounded">
+                    </motion.div>
+
+                    <motion.div 
+                        initial={{ opacity: 0, y: 150 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 3 }} 
+                        className="container-softskills nes-container is-rounded">
                         <h3 className="text-skills">Soft <CharacterButton hidingIn="Skills" onCharacterUnlock={onCharacterUnlock} /></h3>
                         <div>
                             {softSkills.map((softskill, index) => (<p key={index} className="softskill">{softskill}</p>))}
                         </div>
-                    </div>
+                    </motion.div>
                 </section>
             </article>
         </>

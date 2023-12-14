@@ -19,6 +19,9 @@
 
 .contact-top-info div p{
     margin: 0;
+    text-shadow:
+            2px 1px 0px hsl(0, 0%, 0%),
+            4px 4px 5px rgb(16, 9, 9);
 }
 
 
