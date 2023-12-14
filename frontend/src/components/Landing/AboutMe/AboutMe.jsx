@@ -21,12 +21,14 @@ export default function AboutMe({ onCharacterUnlock }) {
             
             <section className="container-about-me">
                 <div className="container-ballons">
-                    <div className="nes-balloon from-left">
+                    <div
+                    className="nes-balloon from-left">
                         <p>I am a front-end developer who merges a passion for technology with a fascination for old video <CharacterButton hidingIn="games" onCharacterUnlock={onCharacterUnlock} /> and design.
                             I focus on creating engaging and functional digital experiences for users, channeling my creativity and problem-solving skills.</p>
                     </div>
 
-                    <div className="nes-balloon from-right">
+                    <div
+                    className="nes-balloon from-right">
                         <p>Outside of web development, I dedicate my time to studying game design and creating <CharacterButton hidingIn="2D" onCharacterUnlock={onCharacterUnlock} /> games with Godot.
                             My commitment to continuous learning drives my motivation and keeps me dedicated to my professional development, facing new challenges with enthusiasm.</p>
                     </div>

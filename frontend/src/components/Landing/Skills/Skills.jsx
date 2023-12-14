@@ -34,27 +34,21 @@ export default function Skills({ onCharacterUnlock }) {
 
                 <section className="container-hard-softskills">
 
-                    <motion.div 
-                        initial={{ opacity: 0, y: 150 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 3 }}
+                    <div 
                         className="container-softskills nes-container is-rounded">
                         <h3 className="text-skills">Hard Skills</h3>
                         <div>
                             {hardSkills.map((hardskill, index) => (<p key={index} className="softskill">{hardskill}</p>))}
                         </div>
-                    </motion.div>
+                    </div>
 
-                    <motion.div 
-                        initial={{ opacity: 0, y: 150 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 3 }} 
+                    <div 
                         className="container-softskills nes-container is-rounded">
                         <h3 className="text-skills">Soft <CharacterButton hidingIn="Skills" onCharacterUnlock={onCharacterUnlock} /></h3>
                         <div>
                             {softSkills.map((softskill, index) => (<p key={index} className="softskill">{softskill}</p>))}
                         </div>
-                    </motion.div>
+                    </div>
                 </section>
             </article>
         </>

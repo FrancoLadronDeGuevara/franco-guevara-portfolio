@@ -22,7 +22,6 @@ import sonic from "./assets/characters/sonic.png";
 import subzero from "./assets/characters/subzero.png";
 import laracroft from "./assets/characters/laracroft.png";
 import earthwormjim from "./assets/characters/earthworm.png";
-import Modal from './components/Modal/Modal';
 
 
 function App() {

@@ -1,19 +1,12 @@
 import "./Card.css"
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
-import { useState } from "react";
 import clickImage from "../../assets/icons/click.png";
 
-export default function Card({ id, imagen, name, description, linkWeb, linkGit }) {
-    const [isFlipped, setIsFlipped] = useState(false);
-
-    const handleClick = () => {
-        setIsFlipped(!isFlipped);
-    };
-
+export default function Card({ id, imagen, name, description, linkWeb, linkGit, isFlipped }) {
 
     return (
         <>
-            <div className={`cartridge ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
+            <div className={`cartridge ${isFlipped ? 'flipped' : ''}`}>
                     <p className={`description ${isFlipped ? 'visible' : ''}`}>{description}</p>
                 <div className="part part_1"></div>
                 <div className="part part_2">
