@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import findCharacter from "../../assets/sounds/find.mp3";
-import { toast } from 'react-toastify';
+import "./CharacterButton.css";
 import 'react-toastify/dist/ReactToastify.css';
-import "./CharacterButton.css"
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+import findCharacter from "../../assets/sounds/find.mp3";
 
 const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
     const [unlocked, setUnlocked] = useState(false);

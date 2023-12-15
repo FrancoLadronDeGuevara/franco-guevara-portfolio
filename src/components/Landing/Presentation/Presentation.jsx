@@ -1,6 +1,6 @@
+import "./Presentation.css"
 import ImagenPerfil from "../../../assets/profile/profile.png"
 import CharacterButton from "../../CharacterButton/CharacterButton"
-import "./Presentation.css"
 
 export default function Presentation({ onCharacterUnlock }) {
     return (
@@ -14,7 +14,7 @@ export default function Presentation({ onCharacterUnlock }) {
                     <h6 className="text-bottom"><CharacterButton hidingIn="Creative" onCharacterUnlock={onCharacterUnlock} /> Developer, Game Design student</h6>
                 </div>
                 <div className="container-right">
-                    <img src={ImagenPerfil} alt="" className="right-side-img" />
+                    <img src={ImagenPerfil} alt="franco guevara image" className="right-side-img" />
                 </div>
             </div>
 

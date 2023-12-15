@@ -1,7 +1,7 @@
 import "./Navbar.css";
+import { useRef, useState } from "react";
 import soundtrack from "../../assets/sounds/soundtrack.mp3";
 import CharacterButton from "../CharacterButton/CharacterButton";
-import { useRef, useState } from "react";
 
 export default function Navbar({ unlockedCharacters, onCharacterUnlock, characters }) {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -42,7 +42,7 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock, characte
                     <div className="menu-characters">
                         {characters.map((char, index) => (
                             <div key={index} style={{ filter: unlockedCharacters.some((unlockedChar) => unlockedChar.hidingIn === char.hidingIn) ? 'contrast(100%) ' : 'contrast(0%) brightness(0%)' }}>
-                                <img className="character-image" src={char.img} alt={`${char.name} Image`} />
+                                <img className="character-image" src={char.img} alt={`${char.name} character image`} />
                             </div>
                         ))}
                     </div>

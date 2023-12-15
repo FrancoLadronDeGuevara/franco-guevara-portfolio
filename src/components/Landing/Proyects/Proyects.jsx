@@ -26,7 +26,6 @@ export default function Proyects({ onCharacterUnlock }) {
                                     </div>
                                 )}
                             </FlipAnimation>
-                            // <Card key={proyect.id} imagen={proyect.imagen} name={proyect.name} description={proyect.description} linkWeb={proyect.linkWeb} linkGit={proyect.linkGit} />
                         ))
                     }
                 </article>

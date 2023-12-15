@@ -1,6 +1,6 @@
-import { certificationList } from "./Certification.js"
 import "./Certification.css"
 import { useState } from "react"
+import { certificationList } from "./Certification.js"
 import CharacterButton from "../../CharacterButton/CharacterButton.jsx";
 
 export default function Certification({onCharacterUnlock}) {
@@ -28,7 +28,7 @@ export default function Certification({onCharacterUnlock}) {
             <section className="container-certification">
                 {certificationList.map(certificate => (
                     <article key={certificate.id} className="window" onClick={() => openImage(certificate)}>
-                        <img src={certificate.img} alt="" className="cert-image" />
+                        <img src={certificate.img} alt={`${certificate.name} image`} className="cert-image" />
                     </article>
                 ))}
             </section>
@@ -37,7 +37,7 @@ export default function Certification({onCharacterUnlock}) {
                 {isImageOpen && selectedCertificate && (
                     <div className="certificate">
                         <p className="certificate-title">{selectedCertificate.name}</p>
-                        <img src={selectedCertificate.img} alt={selectedCertificate.name} />
+                        <img src={selectedCertificate.img} alt={`${selectedCertificate.name} image`} />
                     </div>
                 )}
             </div>

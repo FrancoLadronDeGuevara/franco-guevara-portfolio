@@ -23,8 +23,8 @@ export default function Card({ id, imagen, name, description, linkWeb, linkGit, 
                 </div>
                 <div className="part dark image_bg">
                     <div className="part image">
-                        <img src={imagen} alt={name} className={`image ${isFlipped ? 'hidden' : ''}`} />
-                        <img src={clickImage} alt="" className={`click-image ${isFlipped ? 'hidden' : ''}`}/>
+                        <img src={imagen} alt={`${name} proyect image`} className={`image ${isFlipped ? 'hidden' : ''}`} />
+                        <img src={clickImage} alt="click here image" className={`click-image ${isFlipped ? 'hidden' : ''}`}/>
                     </div>
                 </div>
                 <div className={`part triangle ${isFlipped ? 'hidden' : ''}`}></div>

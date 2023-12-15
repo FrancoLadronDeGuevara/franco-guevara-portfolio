@@ -1,8 +1,8 @@
-import "./ContactMe.css"
+import "./ContactMe.css";
 import { AiOutlineWhatsApp, AiOutlineMail, AiOutlineEnvironment } from "react-icons/ai";
+import { useForm } from "../../../hooks/useForm";
 import CharacterButton from "../../CharacterButton/CharacterButton";
 import Loader from "../../Loader/Loader";
-import { useForm } from "../../../hooks/useForm";
 import Modal from "../../Modal/Modal";
 
 const initialForm = {

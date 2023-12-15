@@ -1,6 +1,6 @@
-import CharacterButton from "../../CharacterButton/CharacterButton"
-import { useState } from "react";
 import "./AboutMe.css"
+import { useState } from "react";
+import CharacterButton from "../../CharacterButton/CharacterButton"
 
 
 export default function AboutMe({ onCharacterUnlock }) {
