@@ -54,6 +54,10 @@
     align-items: center;
 }
 
+.right-side-img{
+    filter: brightness(1.6);
+}
+
 .container-left {
     margin-top: 5rem;
     height: 300px;
