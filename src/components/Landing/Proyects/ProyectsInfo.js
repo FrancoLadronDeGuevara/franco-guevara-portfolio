@@ -8,22 +8,14 @@ import proyect6Image from "../../../assets/proyects/proyect6.png";
 export const proyectsList = [
     {
         "id": 1,
-        "name": "VangaMovies",
-        "description": "VangaMovies is a movie blog created with HTML, CSS, and Bootstrap featuring a 100% responsive design.",
-        "imagen": proyect1Image,
-        "linkWeb": "https://vangamovies.netlify.app/",
-        "linkGit": "https://github.com/FrancoLadronDeGuevara/primerProyecto"
+        "name": "Pokedeck",
+        "description": "A pokemon collection card game made with Redux Toolkit, Phaser, Material UI, React and MongoDB for database",
+        "imagen": proyect4Image,
+        "linkWeb": "https://pokedeck-game.vercel.app/",
+        "linkGit": "https://github.com/FrancoLadronDeGuevara/pokedeck-client"
     },
     {
         "id": 2,
-        "name": "SoundStream",
-        "description": "SoundStream is a Music webpage created with HTML, CSS, and Javascript, featuring user registration and login, CRUD operations, song search filtering, and a music player.",
-        "imagen": proyect2Image,
-        "linkWeb": "https://soundstream.netlify.app/",
-        "linkGit": "https://github.com/FrancoLadronDeGuevara/segundoProyecto"
-    },
-    {
-        "id": 3,
         "name": "ClickMarket",
         "description": "E-Commerce with the MERN stack featuring user registration and login, shopping cart, favorite products, CRUD operations for users and products, and a simulated purchase with Stripe.",
         "imagen": proyect3Image,
@@ -31,12 +23,20 @@ export const proyectsList = [
         "linkGit": "https://github.com/NassimS01/ClickMarket-Frontend"
     },
     {
+        "id": 3,
+        "name": "VangaMovies",
+        "description": "VangaMovies is a movie blog created with HTML, CSS, and Bootstrap featuring a 100% responsive design.",
+        "imagen": proyect1Image,
+        "linkWeb": "https://vangamovies.netlify.app/",
+        "linkGit": "https://github.com/FrancoLadronDeGuevara/primerProyecto"
+    },
+    {
         "id": 4,
-        "name": "Admin Dashboard",
-        "description": "Admin dashboard created using Ant Design as a style framework and Dummy JSON as a fake API.",
-        "imagen": proyect4Image,
-        "linkWeb": "https://admin-dashboard-franco-guevara.vercel.app/",
-        "linkGit": "https://github.com/FrancoLadronDeGuevara/AdminDashboard"
+        "name": "SoundStream",
+        "description": "SoundStream is a Music webpage created with HTML, CSS, and Javascript, featuring user registration and login, CRUD operations, song search filtering, and a music player.",
+        "imagen": proyect2Image,
+        "linkWeb": "https://soundstream.netlify.app/",
+        "linkGit": "https://github.com/FrancoLadronDeGuevara/segundoProyecto"
     },
     {
         "id": 5,
