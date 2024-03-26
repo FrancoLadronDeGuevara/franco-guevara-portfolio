@@ -4,7 +4,7 @@ import CharacterButton from "../../CharacterButton/CharacterButton";
 
 export default function Skills({ onCharacterUnlock }) {
     const softSkills = ["Creativity", "Teamwork", "Problem-solving", "Critical Thinking", "Adaptability", "Communication", "Time Management", "Initiative"]
-    const hardSkills = ["HTML/CSS", "JavaScript", "ReactJS", "Scrum methodology", "Responsive Design", "CSS Frameworks", "Package Managers", "Version Control/Git"]
+    const hardSkills = ["HTML/CSS", "JavaScript", "ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Scrum methodology", "Version Control/Git"]
 
     return (
         <>

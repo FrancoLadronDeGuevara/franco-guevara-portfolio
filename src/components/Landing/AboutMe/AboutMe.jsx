@@ -23,7 +23,7 @@ export default function AboutMe({ onCharacterUnlock }) {
                 <div className="container-ballons">
                     <div
                     className="nes-balloon from-left">
-                        <p>I am a front-end developer who merges a passion for technology with a fascination for old video <CharacterButton hidingIn="games" onCharacterUnlock={onCharacterUnlock} /> and design.
+                        <p>I am a full stack developer who merges a passion for technology with a fascination for old video <CharacterButton hidingIn="games" onCharacterUnlock={onCharacterUnlock} /> and design.
                             I focus on creating engaging and functional digital experiences for users, channeling my creativity and problem-solving skills.</p>
                     </div>
 
