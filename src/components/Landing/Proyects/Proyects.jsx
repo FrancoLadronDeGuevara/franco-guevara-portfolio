@@ -17,8 +17,8 @@ export default function Proyects({ onCharacterUnlock }) {
             <section className="container-proyects">
                 <article className="proyects">
                     {
-                        proyectsList.map(proyect => (
-                            <FlipAnimation key={proyect.id} width="250px" height="300px">
+                        proyectsList.map((proyect, indexProyect) => (
+                            <FlipAnimation key={indexProyect} width="250px" height="300px">
                                 {(props) => (
                                     <div>
                                         {props.variant === 'Front' && <Card isFlipped={false} imagen={proyect.imagen} name={proyect.name} description={proyect.description} linkWeb={proyect.linkWeb} linkGit={proyect.linkGit} />}
