@@ -22,13 +22,15 @@ import sonic from "./assets/characters/sonic.png";
 import subzero from "./assets/characters/subzero.png";
 import laracroft from "./assets/characters/laracroft.png";
 import earthwormjim from "./assets/characters/earthworm.png";
+import { useTranslation } from 'react-i18next';
 
 
 function App() {
   const [selectedCharacters, setSelectedCharacters] = useState([]);
+  const { t} = useTranslation()
 
   const characters = [
-    { hidingIn: "Creative", name: "Ash Ketchum", img: ash },
+    { hidingIn: t("presentation.creativeProgrammer"), name: "Ash Ketchum", img: ash },
     { hidingIn: "Franco", name: "Batman", img: batman },
     { hidingIn: "C", name: "Darth Vader", img: darthvader },
     { hidingIn: "s", name: "Donald Duck", img: donald },

@@ -47,12 +47,18 @@ export default function Navbar({ unlockedCharacters, onCharacterUnlock, characte
                         ))}
                     </div>
                 </div>
-                {
-                    isMenuOpen ?
-                        <span className="menu-text" onClick={toggleMenu}>PAUSED</span>
-                        :
-                        <span className="menu-text" onClick={toggleMenu}>MENU</span>
-                }
+                <div>
+
+                </div>
+                <div className="container-soundtrack">
+                    {
+                        isMenuOpen ?
+                            <span className="menu-text" onClick={toggleMenu}>PAUSED</span>
+                            :
+                            <span className="menu-text" onClick={toggleMenu}>MENU</span>
+                    }
+                </div>
+
 
             </div>
         </>

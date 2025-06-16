@@ -1,0 +1,35 @@
+{
+    "navbar":{
+        "menu": "Menu",
+        "paused": "Pausa",
+        "music": "Música",
+        "language": "Idioma",
+        "findCharacters": "Encuentra los 12 personajes ocultos!",
+        "downloadCV": "Descargar CV"
+    },
+    "presentation": {
+        "fullstackDeveloper": "Desarrollador Fullstack",
+        "versatileDeveloper": "Desarrollador versátil, ",
+        "creativeProgrammer": "programador creativo"
+    },
+    "technologies": {
+        "title": "Tecnologías",
+        "hardSkills": "Habilidades técnicas",
+        "softSkills": {
+            "title": "Habilidades blandas",
+            "creative": "Creatividad",
+            "teamwork": "Trabajo en equipo",
+            "problemSolving": "Resolución de problemas",
+            "criticalThinking": "Pensamiento crítico",
+            "adaptability": "Adaptabilidad",
+            "communication": "Comunicación",
+            "timeManagement": "Gestión del tiempo",
+            "initiative": "Iniciativa"
+        }
+    },
+    "aboutMe": {
+        "title": "Acerca de mí",
+        "firstDescription": "",
+        "secondDescription": ""
+    }
+}

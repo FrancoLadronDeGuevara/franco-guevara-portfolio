@@ -1,0 +1,35 @@
+{
+  "navbar": {
+    "menu": "Menu",
+    "paused": "Paused",
+    "music": "Music",
+    "language": "Language",
+    "findCharacters": "Find the 12 hidden characters!",
+    "downloadCV": "Download CV"
+  },
+  "presentation": {
+    "fullstackDeveloper": "Fullstack Developer",
+    "versatileDeveloper": "Versatile Developer, ",
+    "creativeProgrammer": "creative programmer"
+  },
+  "technologies": {
+    "title": "Technologies",
+    "hardSkills": "Hard skills",
+    "softSkills": {
+      "title": "Soft skills",
+      "creative": "Creativity",
+      "teamwork": "Teamwork",
+      "problemSolving": "Problem solving",
+      "criticalThinking": "Critical thinking",
+      "adaptability": "Adaptability",
+      "communication": "Communication",
+      "timeManagement": "Time management",
+      "initiative": "Initiative"
+    }
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "firstDescription": "I am a full stack developer who merges a passion for technology with a fascination for old video games and design. I focus on creating engaging and functional digital experiences for users, channeling my creativity and problem-solving skills.",
+    "secondDescription": "Outside of web development, I dedicate my time to studying game design and creating 2D games with Godot. My commitment to continuous learning drives my motivation and keeps me dedicated to my professional development, facing new challenges with enthusiasm."
+  }
+}

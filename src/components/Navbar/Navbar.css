@@ -13,8 +13,10 @@
 
 .container-soundtrack span, .menu-text{
     cursor: pointer;
-    position: relative;
-    top: 6px;
+}
+
+.container-soundtrack{
+    padding-top: .5rem;
 }
 
 .menu {
