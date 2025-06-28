@@ -1,11 +1,17 @@
 {
   "navbar": {
-    "menu": "Menu",
-    "paused": "Paused",
-    "music": "Music",
-    "language": "Language",
-    "findCharacters": "Find the 12 hidden characters!",
-    "downloadCV": "Download CV"
+    "paused": "PAUSED",
+    "actions": "ACTIONS",
+    "config": "CONFIGURATION",
+    "contact": "CONTACT",
+    "yes": "YES",
+    "no": "NO",
+    "youWin": "You found all! Congrats!",
+    "findCharacters": "Can you find the characters hidden in the words?",
+    "closeModal": "Close",
+    "newCharacterUnlocked": "New character unlocked!",
+    "downloadCV": "DOWNLOAD CV",
+    "playGame": "MINIGAME"
   },
   "presentation": {
     "fullstackDeveloper": "Fullstack Developer",

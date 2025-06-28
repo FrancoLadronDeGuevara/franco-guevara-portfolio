@@ -1,11 +1,17 @@
 {
     "navbar":{
-        "menu": "Menu",
-        "paused": "Pausa",
-        "music": "Música",
-        "language": "Idioma",
-        "findCharacters": "Encuentra los 12 personajes ocultos!",
-        "downloadCV": "Descargar CV"
+        "paused": "PAUSA",
+        "actions": "ACCIONES",
+        "config": "CONFIGURACIÓN",
+        "contact": "CONTACTO",
+        "yes": "SI",
+        "no": "NO",
+        "youWin": "Encontraste a todos! Felicidades!",
+        "findCharacters": "¿Podés encontrar los personajes escondidos en las palabras?",
+        "closeModal": "Cerrar",
+        "newCharacterUnlocked": "Nuevo personaje desbloqueado!",
+        "downloadCV": "DESCARGAR CV",
+        "playGame": "MINIJUEGO"
     },
     "presentation": {
         "fullstackDeveloper": "Desarrollador Fullstack",
