@@ -20,7 +20,14 @@
   },
   "technologies": {
     "title": "Technologies",
-    "hardSkills": "Hard skills",
+    "hardSkills": {
+      "title": "Hard skills",
+      "frontend": "Frontend: HTML/CSS, JavaScript, TypeScript, ReactJS, Redux, Zustand",
+      "backend": "Backend: NodeJS, ExpressJS, MongoDB",
+      "cloudDevOps": "Cloud & DevOps: AWS, Serverless Architecture, Docker",
+      "tools": "Tools: Trello, Jira, Slack, Postman, Git",
+      "methodologies": "Methodologies: Scrum/Agile/Kanban"
+    },
     "softSkills": {
       "title": "Soft skills",
       "creative": "Creativity",
@@ -35,7 +42,38 @@
   },
   "aboutMe": {
     "title": "About Me",
-    "firstDescription": "I am a full stack developer who merges a passion for technology with a fascination for old video games and design. I focus on creating engaging and functional digital experiences for users, channeling my creativity and problem-solving skills.",
-    "secondDescription": "Outside of web development, I dedicate my time to studying game design and creating 2D games with Godot. My commitment to continuous learning drives my motivation and keeps me dedicated to my professional development, facing new challenges with enthusiasm."
+    "firstDescription": "I'm a full stack developer with a strong passion for design, technology, and everything with a retro soul. My portfolio reflects my love for 8-bit graphics and interactive experiences that spark ",
+    "secondDescription": "In my free time, I enjoy creating 2D games using Godot, blending code, pixel art and creativity. I'm always exploring new tools and learning something new, because I believe growing as a developer is a game that never ends."
+  },
+  "proyects": {
+    "title": "Project",
+    "pokedex": "A Pokémon-inspired card game built with React, Redux Toolkit, and Phaser. It features collectible mechanics, dynamic rendering, and MongoDB integration for storing user data and card collections.",
+    "restaurantProject": "A full-stack restaurant template built with the MERN stack. Designed as a teaching tool to demonstrate backend integration, dynamic routes, and responsive layouts using real-world examples.",
+    "clickMarket": "E-Commerce with the MERN stack featuring user registration and login, shopping cart, favorite products, CRUD operations for users and products, and a simulated purchase with Stripe.",
+    "mimArte": "A custom-made website for a beauty salon, featuring responsive design, service listings, and booking options. Tailored to meet the visual identity and specific needs of the client.",
+    "vangaMovies": "Responsive movie blog built with HTML, CSS, and Bootstrap. Showcases a simple yet elegant layout, grid-based sections for reviews, and adaptability across mobile and desktop devices.",
+    "soundStream": "Music web app built with vanilla HTML, CSS, and JavaScript. Features user registration, login, CRUD functionality, song filtering, and an embedded audio player for playback.",
+    "chickenAdventure": "2D platformer built in Godot using pixel-art assets. Currently in development with multiple levels and increasing difficulty. Designed as a creative space to test game mechanics.",
+    "rollingGame": "Small promotional game developed in Godot for RollingCode-related platforms. Created to be embedded on websites, combining marketing and interactivity in a lightweight format."
+  },
+  "certifications": {
+    "title": "ertificates",
+    "fullstack": "Full Stack Web Developer in RollingCode School",
+    "english": "EFSET English Certificate (B2 Upper Intermediate)",
+    "scrum": "Scrum Fundamentals Certified (SFC)",
+    "html": "HTML and CSS (OpenBootCamp)",
+    "intro": "Introduction to Programming (OpenBootCamp)",
+    "basics" : "Basic Concepts of Programming (OpenBootCamp)",
+    "js": "1st place JS 1.0 Tournament",
+    "jsParticipation": "JS 1.0 Participation Certificate",
+    "codingClashWinner": "Coding Clash Tournament Winner"
+  },
+  "contact": {
+    "title": "Contact me",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send"
   }
+  
 }

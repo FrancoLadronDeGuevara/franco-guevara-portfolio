@@ -1,17 +1,19 @@
 import "./Skills.css"
 import { skillsData } from "./Skills";
 import CharacterButton from "../../CharacterButton/CharacterButton";
+import { useTranslation } from "react-i18next";
 
 export default function Skills({ onCharacterUnlock }) {
-    const softSkills = ["Creativity", "Teamwork", "Problem-solving", "Critical Thinking", "Adaptability", "Communication", "Time Management", "Initiative"]
-    const hardSkills = ["HTML/CSS", "JavaScript", "ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Scrum methodology", "Version Control/Git"]
+    const { t } = useTranslation();
+    const softSkills = ["creative", "teamwork", "problemSolving", "criticalThinking", "adaptability", "communication", "timeManagement", "initiative"]
+    const hardSkills = ["frontend", "backend", "cloudDevOps", "tools", "methodologies"]
 
     return (
         <>
             <section className="container-skills">
                 <div className="title-box">
                     <hr />
-                    <span>Techno<CharacterButton hidingIn="lo" onCharacterUnlock={onCharacterUnlock} />gies</span>
+                    <CharacterButton hidingIn={t("technologies.title")} onCharacterUnlock={onCharacterUnlock} />
                     <hr />
                 </div>
                 <article className="slider-skills">
@@ -30,18 +32,18 @@ export default function Skills({ onCharacterUnlock }) {
                 </article>
 
                 <article className="container-hard-softskills">
-                    <div 
+                    <div
                         className="container-softskills nes-container is-rounded">
-                        <h3 className="text-skills">Hard Skills</h3>
+                        <h3 className="text-skills">{t("technologies.hardSkills.title")}</h3>
                         <div>
-                            {hardSkills.map((hardskill, index) => (<p key={index} className="softskill">{hardskill}</p>))}
+                            {hardSkills.map((hardskill, index) => (<p key={index} className="softskill">{t(`technologies.hardSkills.${hardskill}`)}</p>))}
                         </div>
                     </div>
-                    <div 
+                    <div
                         className="container-softskills nes-container is-rounded">
-                        <h3 className="text-skills">Soft <CharacterButton hidingIn="Skills" onCharacterUnlock={onCharacterUnlock} /></h3>
+                        <h3 className="text-skills"><CharacterButton hidingIn={t("technologies.softSkills.title")} onCharacterUnlock={onCharacterUnlock} /></h3>
                         <div>
-                            {softSkills.map((softskill, index) => (<p key={index} className="softskill">{softskill}</p>))}
+                            {softSkills.map((softskill, index) => (<p key={index} className="softskill">{t(`technologies.softSkills.${softskill}`)}</p>))}
                         </div>
                     </div>
                 </article>

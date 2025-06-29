@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import cvIcon from "@/assets/icons/cv.png"
+import CharacterButton from "../../../../../CharacterButton/CharacterButton";
 
-const Resume = () => {
+const Resume = ({ onCharacterUnlock }) => {
     const { t, i18n } = useTranslation();
 
     const links = {
@@ -15,7 +16,7 @@ const Resume = () => {
                 <img src={cvIcon} width="20px" alt="curriculum vitae icon" />
             </button>
             <span style={{ whiteSpace: "nowrap" }}>
-                {t("navbar.downloadCV")}
+                <CharacterButton hidingIn={t("navbar.downloadCV")} onCharacterUnlock={onCharacterUnlock} />
             </span>
         </div>
     )

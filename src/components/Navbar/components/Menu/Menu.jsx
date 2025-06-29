@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { CharactersGame, ContactIcons, LanguageSwitcher, Music, Resume } from "./components";
 import "./Menu.css"
+import CharacterButton from "../../../CharacterButton/CharacterButton";
 
 const Menu = ({ unlockedCharacters, onCharacterUnlock, characters }) => {
     const { t } = useTranslation();
@@ -12,7 +13,7 @@ const Menu = ({ unlockedCharacters, onCharacterUnlock, characters }) => {
                     <hr /><p>{t("navbar.actions")}</p><hr />
                 </div>
                 <div className="menu-actions-content">
-                    <Resume />
+                    <Resume onCharacterUnlock={onCharacterUnlock} />
                     <CharactersGame unlockedCharacters={unlockedCharacters} onCharacterUnlock={onCharacterUnlock} characters={characters} />
                 </div>
             </div>
@@ -27,7 +28,7 @@ const Menu = ({ unlockedCharacters, onCharacterUnlock, characters }) => {
             </div>
             <div className="nes-container is-rounded menu-contact">
                 <div className="menu-contact-title">
-                    <hr /><p>{t("navbar.contact")}</p><hr />
+                    <hr /><p><CharacterButton hidingIn={t("navbar.contact")} onCharacterUnlock={onCharacterUnlock} /></p><hr />
                 </div>
                 <ContactIcons />
             </div>

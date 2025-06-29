@@ -34,14 +34,14 @@ function App() {
     { hidingIn: "Franco", name: "Batman", img: batman },
     { hidingIn: "C", name: "Darth Vader", img: darthvader },
     { hidingIn: "s", name: "Donald Duck", img: donald },
-    { hidingIn: "Skills", name: "Homer Simpson", img: homer },
+    { hidingIn: t("technologies.softSkills.title"), name: "Homer Simpson", img: homer },
     { hidingIn: "5", name: "Indiana Jones", img: indiana },
     { hidingIn: "!", name: "Kratos", img: kratos },
-    { hidingIn: "2D", name: "Mario Bross", img: mario },
-    { hidingIn: "games", name: "Sonic", img: sonic },
-    { hidingIn: "characters", name: "Sub-Zero", img: subzero },
-    { hidingIn: "lo", name: "Lara Croft", img: laracroft },
-    { hidingIn: "Me", name: "Earthworm Jim", img: earthwormjim },
+    { hidingIn: "nostalgia.", name: "Mario Bross", img: mario },
+    { hidingIn: t("navbar.contact"), name: "Sonic", img: sonic },
+    { hidingIn: t("aboutMe.title"), name: "Sub-Zero", img: subzero },
+    { hidingIn: t("technologies.title"), name: "Lara Croft", img: laracroft },
+    { hidingIn: t("navbar.downloadCV"), name: "Earthworm Jim", img: earthwormjim },
   ]
 
   const handleCharacterSelected = (characterHidingIn) => {
