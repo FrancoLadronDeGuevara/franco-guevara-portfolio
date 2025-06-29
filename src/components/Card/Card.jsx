@@ -2,7 +2,7 @@ import "./Card.css"
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
 import clickImage from "../../assets/icons/click.png";
 
-export default function Card({ id, imagen, name, description, linkWeb, linkGit, isFlipped }) {
+export default function Card({ imagen, name, description, linkWeb, linkGit, isFlipped }) {
 
     return (
         <>

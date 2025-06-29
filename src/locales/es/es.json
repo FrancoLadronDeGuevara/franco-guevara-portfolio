@@ -1,35 +1,78 @@
 {
-    "navbar":{
-        "menu": "Menu",
-        "paused": "Pausa",
-        "music": "Música",
-        "language": "Idioma",
-        "findCharacters": "Encuentra los 12 personajes ocultos!",
-        "downloadCV": "Descargar CV"
+  "navbar": {
+    "paused": "PAUSA",
+    "actions": "ACCIONES",
+    "config": "CONFIGURACIÓN",
+    "contact": "CONTACTO",
+    "yes": "SI",
+    "no": "NO",
+    "youWin": "Encontraste a todos! Felicidades!",
+    "findCharacters": "¿Podés encontrar los personajes escondidos en las palabras?",
+    "closeModal": "Cerrar",
+    "newCharacterUnlocked": "Nuevo personaje desbloqueado!",
+    "downloadCV": "DESCARGAR CV",
+    "playGame": "MINIJUEGO"
+  },
+  "presentation": {
+    "fullstackDeveloper": "Desarrollador Fullstack",
+    "versatileDeveloper": "Desarrollador versátil, ",
+    "creativeProgrammer": "programador creativo"
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "hardSkills": {
+      "title": "Habilidades técnicas",
+      "frontend": "Frontend: HTML/CSS, JavaScript, TypeScript, ReactJS, Redux, Zustand",
+      "backend": "Backend: NodeJS, ExpressJS, MongoDB",
+      "cloudDevOps": "Cloud & DevOps: AWS, Arquitectura Serverless, Docker",
+      "tools": "Herramientas: Trello, Jira, Slack, Postman, Git",
+      "methodologies": "Metodologías: Scrum/Ágil/Kanban"
     },
-    "presentation": {
-        "fullstackDeveloper": "Desarrollador Fullstack",
-        "versatileDeveloper": "Desarrollador versátil, ",
-        "creativeProgrammer": "programador creativo"
-    },
-    "technologies": {
-        "title": "Tecnologías",
-        "hardSkills": "Habilidades técnicas",
-        "softSkills": {
-            "title": "Habilidades blandas",
-            "creative": "Creatividad",
-            "teamwork": "Trabajo en equipo",
-            "problemSolving": "Resolución de problemas",
-            "criticalThinking": "Pensamiento crítico",
-            "adaptability": "Adaptabilidad",
-            "communication": "Comunicación",
-            "timeManagement": "Gestión del tiempo",
-            "initiative": "Iniciativa"
-        }
-    },
-    "aboutMe": {
-        "title": "Acerca de mí",
-        "firstDescription": "",
-        "secondDescription": ""
+    "softSkills": {
+      "title": "Habilidades blandas",
+      "creative": "Creatividad",
+      "teamwork": "Trabajo en equipo",
+      "problemSolving": "Resolución de problemas",
+      "criticalThinking": "Pensamiento crítico",
+      "adaptability": "Adaptabilidad",
+      "communication": "Comunicación",
+      "timeManagement": "Gestión del tiempo",
+      "initiative": "Iniciativa"
     }
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "firstDescription": "Soy un desarrollador full stack con una fuerte inclinación por el diseño, la tecnología y todo lo que tenga esencia retro. Mi portafolio refleja mi fascinación por los gráficos de 8 bits y las experiencias interactivas que despiertan ",
+    "secondDescription": "En mi tiempo libre, me gusta crear videojuegos en 2D usando Godot, combinando código, diseño pixelado y creatividad. Siempre estoy explorando nuevas herramientas y aprendiendo algo nuevo, porque creo que crecer como desarrollador es un juego que nunca se termina."
+  },
+  "proyects": {
+    "title": "Proyecto",
+    "pokedex": "Juego de cartas coleccionables inspirado en Pokémon, creado con React, Redux Toolkit y Phaser. Incluye mecánicas dinámicas y base de datos en MongoDB para gestionar las cartas y el progreso del jugador.",
+    "restaurantProject": "Plantilla de restaurante full stack creada con MERN como recurso educativo. Incluye diseño responsive, rutas dinámicas, panel de administración y ejemplos reales para enseñar buenas prácticas.",
+    "clickMarket": "E-commerce con stack MERN que incluye registro e inicio de sesión de usuarios, carrito de compras, productos favoritos, operaciones CRUD para usuarios y productos, y simulación de pago con Stripe.",
+    "mimArte": "Sitio web a medida para un salón de belleza, diseñado según el estilo visual de la clienta. Cuenta con diseño responsive, listado de servicios, opciones de reserva y secciones personalizadas.",
+    "vangaMovies": "Blog de películas creado con HTML, CSS y Bootstrap. Tiene diseño 100% responsive, estructura clara para reseñas, y maquetado adaptable a dispositivos móviles y de escritorio.",
+    "soundStream": "Web de música desarrollada con HTML, CSS y JavaScript. Incluye registro e inicio de sesión, CRUD de canciones, filtrado por nombre y un reproductor de audio integrado para escuchar pistas online.",
+    "chickenAdventure": "Plataformero 2D creado con Godot y gráficos pixel art. Aún en desarrollo, incluye niveles de dificultad creciente y sirve como espacio creativo para probar mecánicas y diseño de niveles.",
+    "rollingGame": "Mini juego 2D hecho en Godot para promocionar sitios vinculados a RollingCode. Está pensado para usarse como experiencia interactiva embebida en páginas, con enfoque visual y publicitario."
+  },
+  "certifications": {
+    "title": "ertificados",
+    "fullstack": "Desarrollador Full Stack en RollingCode School",
+    "english": "EFSET Certificado de inglés (B2 Intermedio Superior)",
+    "scrum": "Fundamentos de Scrum Certificados (SFC)",
+    "html": "HTML y CSS (OpenBootCamp)",
+    "intro": "Introducción a la Programación (OpenBootCamp)",
+    "basics" : "Conceptos Básicos de Programación (OpenBootCamp)",
+    "js": "1er lugar Torneo JS 1.0 ",
+    "jsParticipation": "Certificado de participación JS 1.0",
+    "codingClashWinner": "Ganador Torneo Coding Clash"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar"
+  }
 }

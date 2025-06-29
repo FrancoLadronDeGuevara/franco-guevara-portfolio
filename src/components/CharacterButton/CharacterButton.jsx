@@ -3,8 +3,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import findCharacter from "../../assets/sounds/find.mp3";
+import { useTranslation } from "react-i18next";
 
-const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
+const CharacterButton = ({ hidingIn, onCharacterUnlock }) => {
+    const { t } = useTranslation();
     const [unlocked, setUnlocked] = useState(false);
 
     const soundCharacterFind = new Audio(findCharacter);
@@ -14,7 +16,7 @@ const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
             setUnlocked(true);
             onCharacterUnlock(hidingIn);
 
-            toast.success('New character unlocked!', {
+            toast.success(t("navbar.newCharacterUnlocked"), {
                 position: "bottom-center",
                 autoClose: 2000,
                 hideProgressBar: true,
@@ -23,7 +25,7 @@ const CharacterButton = ({ hidingIn, onCharacterUnlock}) => {
                 draggable: false,
                 progress: undefined,
                 theme: "colored",
-                });
+            });
 
             soundCharacterFind.play();
         }

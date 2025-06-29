@@ -4,37 +4,55 @@ import htmlCert from "../../../assets/certification/htmlcssCert.jpg";
 import intrCert from "../../../assets/certification/intCert.jpg";
 import concCert from "../../../assets/certification/concCert.jpg";
 import scrCert from "../../../assets/certification/scrCert.png";
+import firstCert from "../../../assets/certification/firstCert.png";
+import jsCert from "../../../assets/certification/jsCert.png";
+import firstCodCert from "../../../assets/certification/firstCodCert.jpeg";
 
 
 export const certificationList = [
     {
         id: "1",
-        name: " Full Stack Web Developer in RollingCode School",
+        name: "fullstack",
         img: rgCert,
     },
     {
         id: "2",
-        name: "EFSET English Certificate (B2 Upper Intermediate)",
+        name: "english",
         img: engCert,
     },
     {
         id: "3",
-        name: "Scrum Fundamentals Certified (SFC)",
+        name: "scrum",
         img: scrCert,
     },
     {
         id: "4",
-        name: "HTML and CSS (OpenBootCamp))",
+        name: "html",
         img: htmlCert,
     },
     {
         id: "5",
-        name: "Introduction to Programming (OpenBootCamp)",
+        name: "intro",
         img: intrCert,
     },
     {
         id: "6",
-        name: "Basic Concepts of Programming (OpenBootCamp)",
+        name: "basics",
         img: concCert,
+    },
+    {
+        id: "7",
+        name: "jsParticipation",
+        img: jsCert,
+    },
+    {
+        id: "8",
+        name: "js",
+        img: firstCert,
+    },
+    {
+        id: "9",
+        name: "codingClashWinner",
+        img: firstCodCert,
     },
 ]

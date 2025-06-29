@@ -4,6 +4,7 @@ import { useForm } from "../../../hooks/useForm";
 import CharacterButton from "../../CharacterButton/CharacterButton";
 import Loader from "../../Loader/Loader";
 import Modal from "../../Modal/Modal";
+import { useTranslation } from "react-i18next";
 
 const initialForm = {
     email: "",
@@ -39,6 +40,7 @@ const validationsForm = (form) => {
 }
 
 export default function ContactMe({ onCharacterUnlock }) {
+    const {t} = useTranslation();
     const {
         form,
         errors,
@@ -53,7 +55,7 @@ export default function ContactMe({ onCharacterUnlock }) {
         <>
             <div className="title-box">
                 <hr />
-                <h2>Contact Me<CharacterButton hidingIn="!" onCharacterUnlock={onCharacterUnlock} /></h2>
+                <h2>{t("contact.title")}<CharacterButton hidingIn="!" onCharacterUnlock={onCharacterUnlock} /></h2>
                 <hr />
             </div>
 
@@ -66,16 +68,16 @@ export default function ContactMe({ onCharacterUnlock }) {
 
                 <div className="contact-bottom">
                     <form onSubmit={handleSubmit}>
-                        <input className="nes-input" type="email" id="userEmail" name="email" placeholder="Email" onBlur={handleBlur} onChange={handleChange} value={form.email} required />
+                        <input className="nes-input" type="email" id="userEmail" name="email" placeholder={t("contact.email")} onBlur={handleBlur} onChange={handleChange} value={form.email} required />
                         {errors.email && <p className="error-message">{errors.email}</p>}
 
-                        <input className="nes-input" type="text" id="userSubject" name="subject" placeholder="Subject" onBlur={handleBlur} onChange={handleChange} value={form.subject} required />
+                        <input className="nes-input" type="text" id="userSubject" name="subject" placeholder={t("contact.subject")} onBlur={handleBlur} onChange={handleChange} value={form.subject} required />
                         {errors.subject && <p className="error-message">{errors.subject}</p>}
 
-                        <textarea className="nes-textarea" id="userMessage" name="message" cols="50" rows="5" placeholder="Leave a message" onBlur={handleBlur} onChange={handleChange} value={form.message} required></textarea>
+                        <textarea className="nes-textarea" id="userMessage" name="message" cols="50" rows="5" placeholder={t("contact.message")} onBlur={handleBlur} onChange={handleChange} value={form.message} required></textarea>
                         {errors.message && <p className="error-message">{errors.message}</p>}
                         
-                        {loading? <Loader/> : <input className="nes-btn is-success" type="submit" value="Submit" />}
+                        {loading? <Loader/> : <input className="nes-btn is-success" type="submit" value={t("contact.send")} />}
                         
                     </form>
                     {response && <Modal/>}
