@@ -40,6 +40,41 @@
       "initiative": "Initiative"
     }
   },
+  "professionalExperience": {
+    "title": "Professional Experience",
+    "instructor": {
+      "jobTitle": "Web Development Instructor - Instituto NOA",
+      "date": "October 2024 - Present",
+      "jobDescription": "Teach foundational and intermediate web development skills, including HTML, CSS, JavaScript and Node.js. Create educational materials, guide students through practical projects, and foster best practices in web development for real-world applications.",
+      "firstResponsibility": "Develop practical activities that reinforce the learning and application of HTML, CSS, and JavaScript.",
+      "secondResponsibility": "Guide students in building complete web applications, reinforcing core programming concepts and project-based learning.",
+      "thirdResponsibility": "Provide individualized feedback and mentorship, improving student performance and project quality."
+    },
+    "appsnube": {
+      "jobTitle": "Fullstack Developer - Appsnube",
+      "date": "November 2024 - June 2025",
+      "jobDescription": "Developed and maintained e-commerce applications integrated with the Tiendanube platform. Worked across the full stack using a serverless architecture on AWS and modern frontend technologies. Responsible for technical support, implementation of new features, and bug fixing to ensure seamless performance of applications used by multiple online stores.",
+      "firstResponsibility": "Implemented new features across multiple applications, improving user experience and reducing client support requests.",
+      "secondResponsibility": "Optimized backend services using AWS Lambda and DynamoDB, resulting in faster response times and lower infrastructure costs.",
+      "thirdResponsibility": "Resolved critical bugs in production systems, ensuring consistent uptime and improved stability for end users."
+    },
+    "freelance": {
+      "jobTitle": "Freelance Web Developer",
+      "date": "April 2024 - June 2024",
+      "jobDescription": "Developed a responsive website for a beauty studio client, focusing on user experience and SEO. Achieved first place in search results for 'Estudio Mimarte.'",
+      "firstResponsibility": "Developed and deployed a responsive website to enhance client visibility.",
+      "secondResponsibility": "Implemented SEO strategies, achieving top search rankings.",
+      "thirdResponsibility": "Collaborated closely with the client to meet design and functionality needs."
+    },
+    "tutor": {
+      "jobTitle": "Private Tutor",
+      "date": "February 2024 - April 2024",
+      "jobDescription": "Provided personalized tutoring for students in web development, enhancing their understanding and application of coding concepts, which led to improved academic performance.",
+      "firstResponsibility": "Created lesson plans covering CSS, React basics, Material UI, Redux Toolkit, Node.js, Express, MongoDB.",
+      "secondResponsibility": "Helped students build their own projects to solidify their understanding.",
+      "thirdResponsibility": "Provided continuous feedback on their progress and code, helping them troubleshoot and refine their skills."
+    }
+  },
   "aboutMe": {
     "title": "About Me",
     "firstDescription": "I'm a full stack developer with a strong passion for design, technology, and everything with a retro soul. My portfolio reflects my love for 8-bit graphics and interactive experiences that spark ",
@@ -63,7 +98,7 @@
     "scrum": "Scrum Fundamentals Certified (SFC)",
     "html": "HTML and CSS (OpenBootCamp)",
     "intro": "Introduction to Programming (OpenBootCamp)",
-    "basics" : "Basic Concepts of Programming (OpenBootCamp)",
+    "basics": "Basic Concepts of Programming (OpenBootCamp)",
     "js": "1st place JS 1.0 Tournament",
     "jsParticipation": "JS 1.0 Participation Certificate",
     "codingClashWinner": "Coding Clash Tournament Winner"
@@ -75,5 +110,4 @@
     "message": "Message",
     "send": "Send"
   }
-  
 }

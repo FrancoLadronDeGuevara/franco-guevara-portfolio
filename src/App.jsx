@@ -23,6 +23,7 @@ import subzero from "./assets/characters/subzero.png";
 import laracroft from "./assets/characters/laracroft.png";
 import earthwormjim from "./assets/characters/earthworm.png";
 import { useTranslation } from 'react-i18next';
+import ProfessionalExperience from './components/Landing/ProfessionalExperience/ProfessionalExperience.jsx';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
       <Navbar unlockedCharacters={selectedCharacters} onCharacterUnlock={handleCharacterSelected} characters={characters} />
       <Presentation onCharacterUnlock={handleCharacterSelected} />
       <Skills onCharacterUnlock={handleCharacterSelected} />
+      <ProfessionalExperience/>
       <AboutMe onCharacterUnlock={handleCharacterSelected} />
       <Proyects onCharacterUnlock={handleCharacterSelected} />
       <Certification onCharacterUnlock={handleCharacterSelected} />
