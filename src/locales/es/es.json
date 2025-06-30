@@ -45,6 +45,41 @@
     "firstDescription": "Soy un desarrollador full stack con una fuerte inclinación por el diseño, la tecnología y todo lo que tenga esencia retro. Mi portafolio refleja mi fascinación por los gráficos de 8 bits y las experiencias interactivas que despiertan ",
     "secondDescription": "En mi tiempo libre, me gusta crear videojuegos en 2D usando Godot, combinando código, diseño pixelado y creatividad. Siempre estoy explorando nuevas herramientas y aprendiendo algo nuevo, porque creo que crecer como desarrollador es un juego que nunca se termina."
   },
+  "professionalExperience": {
+    "title": "Experiencia Profesional",
+    "instructor": {
+      "jobTitle": "Instructor de Desarrollo Web - Instituto NOA",
+      "date": "Octubre 2024 - Presente",
+      "jobDescription": "Enseño habilidades fundamentales de desarrollo web, incluyendo HTML, CSS, JavaScript y Node.js. Creo materiales educativos, guío a los estudiantes en proyectos prácticos y fomento las mejores prácticas en desarrollo web para aplicaciones del mundo real.",
+      "firstResponsibility": "Creo ejercicios prácticos y de aplicación que ayudan a los estudiantes en el uso efectivo de HTML, CSS y JavaScript.",
+      "secondResponsibility": "Guío a los estudiantes en la creación de aplicaciones web completas, reforzando conceptos clave.",
+      "thirdResponsibility": "Brindo retroalimentación personalizada que mejora el rendimiento y la calidad de los proyectos."
+    },
+    "appsnube": {
+      "jobTitle": "Desarrollador Full Stack - Appsnube",
+      "date": "Noviembre 2024 - Junio 2025",
+      "jobDescription": "Diseñé, desarrollé y mantuve aplicaciones e-commerce utilizadas por tiendas en la plataforma Tiendanube, trabajando tanto en el frontend con React y TypeScript como en el backend utilizando arquitectura serverless con AWS (Lambda, DynamoDB, S3, CloudWatch, Docker). Me encargué de brindar soporte técnico, implementar nuevas funcionalidades y solucionar errores para asegurar el funcionamiento eficiente y continuo de las aplicaciones en producción.",
+      "firstResponsibility": "Implementación de nuevas funcionalidades que mejoraron la experiencia del usuario y redujeron solicitudes de soporte.",
+      "secondResponsibility": "Optimización de servicios backend usando AWS Lambda y DynamoDB, mejorando tiempos de respuesta y reduciendo costos.",
+      "thirdResponsibility": "Resolución de errores críticos en producción, garantizando estabilidad y disponibilidad continua."
+    },
+    "freelance": {
+      "jobTitle": "Desarrollador Web Freelance",
+      "date": "Abril 2024 - Junio 2024",
+      "jobDescription": "Desarrollé un sitio web responsive para una clienta de un estudio de belleza, enfocándome en la experiencia del usuario y el SEO. Logré el primer lugar en los resultados de búsqueda para 'Estudio Mimarte.'",
+      "firstResponsibility": "Desarrollé y desplegué un sitio web responsive para mejorar la visibilidad del cliente.",
+      "secondResponsibility": "Implementé estrategias de SEO, logrando los primeros puestos en los rankings de búsqueda.",
+      "thirdResponsibility": "Colaboré estrechamente con la clienta para cumplir con los requisitos de diseño y funcionalidad."
+    },
+    "tutor": {
+      "jobTitle": "Tutor Privado - Desarrollo Web",
+      "date": "Febrero 2024 - Abril 2024",
+      "jobDescription": "Proporcioné tutorías personalizadas a estudiantes en desarrollo web, mejorando su comprensión y aplicación de conceptos de programación, lo que llevó a una mejoría en su desempeño académico.",
+      "firstResponsibility": "Creé planes de lecciones cubriendo CSS, fundamentos de React, Material UI, Redux Toolkit, Node.js, Express y MongoDB.",
+      "secondResponsibility": "Ayudé a los estudiantes a construir sus propios proyectos para consolidar su comprensión.",
+      "thirdResponsibility": "Proporcioné feedback continuo sobre su progreso y código, ayudándo a solucionar problemas y perfeccionar sus habilidades."
+    }
+  },
   "proyects": {
     "title": "Proyecto",
     "pokedex": "Juego de cartas coleccionables inspirado en Pokémon, creado con React, Redux Toolkit y Phaser. Incluye mecánicas dinámicas y base de datos en MongoDB para gestionar las cartas y el progreso del jugador.",

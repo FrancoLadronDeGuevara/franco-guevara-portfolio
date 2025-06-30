@@ -13,6 +13,9 @@ import logoTrello from "../../../assets/Slider/trello.png";
 import logoNpm from "../../../assets/Slider/npm.png";
 import logoGodot from "../../../assets/Slider/godot.png";
 import logoGit from "../../../assets/Slider/git.png";
+import logoAws from "../../../assets/Slider/aws.png";
+import logoTypescript from "../../../assets/Slider/typescript.png";
+import logoDocker from "../../../assets/Slider/docker.png";
 
 export const skillsData = [
     { name: 'HTML', logo: logoHtml},
@@ -29,5 +32,8 @@ export const skillsData = [
     { name: 'Trello', logo: logoTrello},
     { name: 'NPM', logo: logoNpm},
     { name: 'Godot', logo: logoGodot},
-    { name: 'Git', logo: logoGit}
+    { name: 'Git', logo: logoGit},
+    { name: 'AWS', logo: logoAws},
+    { name: 'Typescript', logo: logoTypescript},
+    { name: 'Docker', logo: logoDocker},
 ];
