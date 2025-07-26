@@ -6,8 +6,8 @@ const Resume = ({ onCharacterUnlock }) => {
     const { t, i18n } = useTranslation();
 
     const links = {
-        es: "https://drive.google.com/file/d/1Uqj_G-37FuA7GDcnxDhXVW-Qu2qVywnu/view?usp=sharing",
-        en: "https://drive.google.com/file/d/15lWa9twv5Wz11Z7mmG0GIP4kjsQ79--6/view?usp=sharing"
+        es: "https://drive.google.com/file/d/1JB8W2sNtYRgB-aXuYEYGFSM-TYduSom7/view?usp=drive_link",
+        en: "https://drive.google.com/file/d/1gZCYPnjOhK6lXNt2eitg2Ow5IX_NaRJ-/view?usp=drive_link"
     }
 
     return (

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next"
 const ProfessionalExperience = () => {
     const { t } = useTranslation()
 
-    const jobList = ["instructor", "appsnube", "freelance", "tutor"]
+    const jobList = ["ada", "instructor", "tutor", "appsnube", "freelance" ]
 
     return (
         <>
