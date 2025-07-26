@@ -47,13 +47,29 @@
   },
   "professionalExperience": {
     "title": "Experiencia Profesional",
+    "ada": {
+      "jobTitle": "Instructor de Frontend - ADA ITW",
+      "date": "Julio 2025 - Actualidad",
+      "jobDescription": "Diseño e imparto clases enfocadas en desarrollo web moderno en una ONG que busca reducir la brecha de género en tecnología. Promuevo la inclusión, el aprendizaje práctico y la autonomía de las estudiantes, contribuyendo a un entorno de formación accesible y colaborativo.",
+      "firstResponsibility": "Dicto cursos de desarrollo frontend a mujeres y diversidades en una ONG sin fines de lucro.",
+      "secondResponsibility": "Enseño habilidades prácticas en HTML, CSS, JavaScript y frameworks modernos.",
+      "thirdResponsibility": "Adapto los contenidos a las necesidades del grupo y promuevo un entorno colaborativo"
+    },
     "instructor": {
       "jobTitle": "Instructor de Desarrollo Web - Instituto NOA",
-      "date": "Octubre 2024 - Presente",
+      "date": "Octubre 2024 - Actualidad",
       "jobDescription": "Enseño habilidades fundamentales de desarrollo web, incluyendo HTML, CSS, JavaScript y Node.js. Creo materiales educativos, guío a los estudiantes en proyectos prácticos y fomento las mejores prácticas en desarrollo web para aplicaciones del mundo real.",
       "firstResponsibility": "Creo ejercicios prácticos y de aplicación que ayudan a los estudiantes en el uso efectivo de HTML, CSS y JavaScript.",
       "secondResponsibility": "Guío a los estudiantes en la creación de aplicaciones web completas, reforzando conceptos clave.",
       "thirdResponsibility": "Brindo retroalimentación personalizada que mejora el rendimiento y la calidad de los proyectos."
+    },
+    "tutor": {
+      "jobTitle": "Tutor Privado - Desarrollo Web",
+      "date": "Febrero 2024 - Actualidad",
+      "jobDescription": "Proporciono tutorías personalizadas a estudiantes en desarrollo web, mejorando su comprensión y aplicación de conceptos de programación, lo que contribuye a un mejor desempeño académico.",
+      "firstResponsibility": "Creo planes de lecciones que cubren CSS, fundamentos de React, Material UI, Redux Toolkit, Node.js, Express y MongoDB.",
+      "secondResponsibility": "Ayudo a los estudiantes a construir sus propios proyectos para consolidar su comprensión.",
+      "thirdResponsibility": "Proporciono feedback continuo sobre su progreso y código, ayudándolos a solucionar problemas y perfeccionar sus habilidades."
     },
     "appsnube": {
       "jobTitle": "Desarrollador Full Stack - Appsnube",
@@ -70,14 +86,6 @@
       "firstResponsibility": "Desarrollé y desplegué un sitio web responsive para mejorar la visibilidad del cliente.",
       "secondResponsibility": "Implementé estrategias de SEO, logrando los primeros puestos en los rankings de búsqueda.",
       "thirdResponsibility": "Colaboré estrechamente con la clienta para cumplir con los requisitos de diseño y funcionalidad."
-    },
-    "tutor": {
-      "jobTitle": "Tutor Privado - Desarrollo Web",
-      "date": "Febrero 2024 - Abril 2024",
-      "jobDescription": "Proporcioné tutorías personalizadas a estudiantes en desarrollo web, mejorando su comprensión y aplicación de conceptos de programación, lo que llevó a una mejoría en su desempeño académico.",
-      "firstResponsibility": "Creé planes de lecciones cubriendo CSS, fundamentos de React, Material UI, Redux Toolkit, Node.js, Express y MongoDB.",
-      "secondResponsibility": "Ayudé a los estudiantes a construir sus propios proyectos para consolidar su comprensión.",
-      "thirdResponsibility": "Proporcioné feedback continuo sobre su progreso y código, ayudándo a solucionar problemas y perfeccionar sus habilidades."
     }
   },
   "proyects": {
@@ -98,7 +106,7 @@
     "scrum": "Fundamentos de Scrum Certificados (SFC)",
     "html": "HTML y CSS (OpenBootCamp)",
     "intro": "Introducción a la Programación (OpenBootCamp)",
-    "basics" : "Conceptos Básicos de Programación (OpenBootCamp)",
+    "basics": "Conceptos Básicos de Programación (OpenBootCamp)",
     "js": "1er lugar Torneo JS 1.0 ",
     "jsParticipation": "Certificado de participación JS 1.0",
     "codingClashWinner": "Ganador Torneo Coding Clash"

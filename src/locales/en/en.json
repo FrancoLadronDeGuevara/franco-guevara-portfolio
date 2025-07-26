@@ -42,13 +42,29 @@
   },
   "professionalExperience": {
     "title": "Professional Experience",
+    "ada": {
+      "jobTitle": "Instructor de Frontend - ADA ITW",
+      "date": "July 2025 - Present",
+      "jobDescription": "Design and deliver classes focused on modern web development at a non-profit organization committed to closing the gender gap in tech. Foster inclusion, hands-on learning, and student autonomy, contributing to an accessible and collaborative training environment.",
+      "firstResponsibility": "Teach frontend development courses to women and gender-diverse individuals at a non-profit organization.",
+      "secondResponsibility": "Provide practical training in HTML, CSS, JavaScript, and modern frameworks.",
+      "thirdResponsibility": "Adapt content to group needs and encourage a collaborative learning environment."
+    },
     "instructor": {
       "jobTitle": "Web Development Instructor - Instituto NOA",
       "date": "October 2024 - Present",
-      "jobDescription": "Teach foundational and intermediate web development skills, including HTML, CSS, JavaScript and Node.js. Create educational materials, guide students through practical projects, and foster best practices in web development for real-world applications.",
+      "jobDescription": "Teach foundational and advanced web development skills, including HTML, CSS, JavaScript and Node.js. Create educational materials, guide students through practical projects, and foster best practices in web development for real-world applications.",
       "firstResponsibility": "Develop practical activities that reinforce the learning and application of HTML, CSS, and JavaScript.",
       "secondResponsibility": "Guide students in building complete web applications, reinforcing core programming concepts and project-based learning.",
       "thirdResponsibility": "Provide individualized feedback and mentorship, improving student performance and project quality."
+    },
+    "tutor": {
+      "jobTitle": "Private Tutor",
+      "date": "February 2024 - Present",
+      "jobDescription": "Provide personalized tutoring for students in web development, enhancing their understanding and application of coding concepts, which contributes to improved academic performance.",
+      "firstResponsibility": "Create lesson plans covering CSS, React basics, Material UI, Redux Toolkit, Node.js, Express, and MongoDB.",
+      "secondResponsibility": "Help students build their own projects to solidify their understanding.",
+      "thirdResponsibility": "Provide continuous feedback on their progress and code, helping them troubleshoot and refine their skills."
     },
     "appsnube": {
       "jobTitle": "Fullstack Developer - Appsnube",
@@ -65,14 +81,6 @@
       "firstResponsibility": "Developed and deployed a responsive website to enhance client visibility.",
       "secondResponsibility": "Implemented SEO strategies, achieving top search rankings.",
       "thirdResponsibility": "Collaborated closely with the client to meet design and functionality needs."
-    },
-    "tutor": {
-      "jobTitle": "Private Tutor",
-      "date": "February 2024 - April 2024",
-      "jobDescription": "Provided personalized tutoring for students in web development, enhancing their understanding and application of coding concepts, which led to improved academic performance.",
-      "firstResponsibility": "Created lesson plans covering CSS, React basics, Material UI, Redux Toolkit, Node.js, Express, MongoDB.",
-      "secondResponsibility": "Helped students build their own projects to solidify their understanding.",
-      "thirdResponsibility": "Provided continuous feedback on their progress and code, helping them troubleshoot and refine their skills."
     }
   },
   "aboutMe": {
