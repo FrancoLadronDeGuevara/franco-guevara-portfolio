@@ -9,55 +9,102 @@ const GLITCH_INTERVAL = 3000;
 const GLITCH_DURATION = 500;
 
 export default function Presentation({ onCharacterUnlock }) {
-    const { t } = useTranslation();
-    const [currentImage, setCurrentImage] = useState(profile);
-    const [isGlitching, setIsGlitching] = useState(false);
+  const { t } = useTranslation();
+  const [currentImage, setCurrentImage] = useState(profile);
+  const [isGlitching, setIsGlitching] = useState(false);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setIsGlitching(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsGlitching(true);
 
-            setTimeout(() => {
-                setCurrentImage(prev => prev === profile8bits ? profile : profile8bits);
-                setIsGlitching(false);
-            }, GLITCH_DURATION);
-        }, GLITCH_INTERVAL);
+      setTimeout(() => {
+        setCurrentImage((prev) =>
+          prev === profile8bits ? profile : profile8bits
+        );
+        setIsGlitching(false);
+      }, GLITCH_DURATION);
+    }, GLITCH_INTERVAL);
 
-        return () => clearInterval(interval);
-    }, []);
+    return () => clearInterval(interval);
+  }, []);
 
-    const renderGlitchImages = () => {
-        return Array(4).fill(0).map((_, index) => (
-            <div
-                key={index}
-                className="glitch-img"
-                style={{
-                    backgroundImage: `url(${currentImage})`,
-                    filter: currentImage === profile ? 'brightness(0.9) contrast(1.4)' : 'none'
-                }}
+  const renderGlitchImages = () => {
+    return Array(4)
+      .fill(0)
+      .map((_, index) => (
+        <div
+          key={index}
+          className="glitch-img"
+          style={{
+            backgroundImage: `url(${currentImage})`,
+            filter:
+              currentImage === profile
+                ? "brightness(0.9) contrast(1.4)"
+                : "none",
+          }}
+        />
+      ));
+  };
+
+  return (
+    <div className="presentation-container">
+      <div className="parallax background"></div>
+      <div className="parallax background-two"></div>
+
+      <div className="presentation-content">
+        <div className="presentation-text">
+          <h3 className="presentation-title-top">
+            {t("presentation.fullstackDeveloper")}
+          </h3>
+          <h1 className="presentation-title-center">FRANCO GUEVARA</h1>
+          <h6 className="presentation-title-bottom">
+            <span>{t("presentation.versatileDeveloper")}</span>
+            <CharacterButton
+              hidingIn={t("presentation.creativeProgrammer")}
+              onCharacterUnlock={onCharacterUnlock}
             />
-        ));
-    };
-
-    return (
-        <div className="presentation-container">
-            <div className="parallax background"></div>
-            <div className="parallax background-two"></div>
-
-            <div className="presentation-content">
-                <div className="presentation-text">
-                    <h3 className="presentation-title-top">{t("presentation.fullstackDeveloper")}</h3>
-                    <h1 className="presentation-title-center">FRANCO GUEVARA</h1>
-                    <h6 className="presentation-title-bottom">
-                        <span>{t("presentation.versatileDeveloper")}</span>
-                        <CharacterButton hidingIn={t("presentation.creativeProgrammer")} onCharacterUnlock={onCharacterUnlock} />
-                    </h6>
-                </div>
-
-                <div className={`presentation-image-container glitch-effect ${isGlitching ? 'glitch-active' : ''}`}>
-                    {renderGlitchImages()}
-                </div>
-            </div>
+          </h6>
         </div>
-    );
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <div className="lvl-container">
+            <h3>LVL 32</h3>
+            <span>🔻</span>
+          </div>
+
+          <div
+            className={`presentation-image-container glitch-effect ${
+              isGlitching ? "glitch-active" : ""
+            }`}
+          >
+            {renderGlitchImages()}
+          </div>
+          <div className="hp-bar glow-effect" data-glow-offset="true">
+            <div className="hp-bar-color">
+              <h3 className="hp-percent">HP: 100%</h3>
+            </div>
+
+            <svg className="glow-container">
+              <rect
+                pathLength="100"
+                strokeLinecap="round"
+                className="glow-blur"
+              ></rect>
+              <rect
+                pathLength="100"
+                strokeLinecap="round"
+                className="glow-line"
+              ></rect>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

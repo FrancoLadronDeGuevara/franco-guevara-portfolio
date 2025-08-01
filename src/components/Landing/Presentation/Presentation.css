@@ -1,6 +1,10 @@
+/* ==========================================
+   VARIABLES CSS GLOBALES
+   ========================================== */
 :root {
+  /* Variables del efecto glitch */
   --glitch-width: 280px;
-  --glitch-height: 350px;
+  --glitch-height: 280px;
   --gap-horizontal: 5px;
   --gap-vertical: 3px;
   --time-anim: 0.5s;
@@ -12,8 +16,15 @@
   --blend-color-2: transparent;
   --blend-color-3: transparent;
   --blend-color-4: #af4949;
+
+  /* Variables de colores y bordes */
+  --border: 0 0% 91%;
+  --light-green: 100 80% 40%;
 }
 
+/* ==========================================
+   COMPONENTE PRINCIPAL - PRESENTATION
+   ========================================== */
 .presentation-container {
   display: flex;
   align-items: center;
@@ -30,11 +41,9 @@
   align-items: center;
 }
 
-.presentation-text {
-  margin-top: 5rem;
-  height: 300px;
-}
-
+/* ==========================================
+   BACKGROUND PARALLAX
+   ========================================== */
 .parallax {
   position: absolute;
   background-image: url("../../../assets/profile/bgprofile.png");
@@ -53,15 +62,49 @@
   animation: secondary 20s linear infinite;
 }
 
-.presentation-image-container {
-  position: relative;
-  background-image: url("/src/assets/profile/frame8bits.webp");
-  background-size: 100% 100%;
-  width: var(--glitch-width);
-  height: var(--glitch-height);
-  overflow: hidden;
+/* ==========================================
+   SECCIÓN DE TEXTO
+   ========================================== */
+.presentation-text {
+  margin-top: 5rem;
+  height: 300px;
 }
 
+.presentation-title-top {
+  font-size: 30px;
+}
+
+.presentation-title-center {
+  font-size: 50px;
+}
+
+.presentation-title-bottom {
+  margin-top: 6rem;
+  font-size: 20px;
+}
+
+/* ==========================================
+   CONTENEDOR DE NIVEL (LVL)
+   ========================================== */
+.lvl-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: idleBounce 2s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.lvl-container h3 {
+  margin: 0;
+}
+
+/* ==========================================
+   EFECTO GLITCH
+   ========================================== */
 .glitch-effect {
   position: relative;
   width: var(--glitch-width);
@@ -70,17 +113,17 @@
 
 .glitch-img {
   position: absolute;
-  bottom: 35px;
+  top: 0px;
   z-index: -1;
   left: 40px;
   width: 200px;
-  height: 280px;
+  height: 300px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.glitch-img:nth-child(n+2) {
+.glitch-img:nth-child(n + 2) {
   opacity: 0;
 }
 
@@ -102,52 +145,194 @@
   background-blend-mode: var(--blend-mode-4);
 }
 
-.presentation-title-top {
-  font-size: 30px;
+/* ==========================================
+   BARRA DE HP
+   ========================================== */
+.hp-bar {
+  --height: 1.5ch;
+  --top-offset: calc(-1 * var(--height) / 2);
+  --hp-font: 1rem;
+  width: 250px;
+  height: var(--height);
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.25rem;
+  position: relative;
 }
 
-.presentation-title-center {
-  font-size: 50px;
+.hp-bar .hp-bar-color {
+  --animation-pattern: containerPulsate 1.5s cubic-bezier(0, 0.71, 0.29, 0.98)
+    forwards;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(var(--light-green));
+  transition: width 0.6s cubic-bezier(0, 0.71, 0.29, 0.98);
 }
 
-.presentation-title-bottom {
-  margin-top: 6rem;
-  font-size: 20px;
+.hp-bar .hp-bar-color.success {
+  background-color: hsl(var(--light-green));
+  animation: var(--animation-pattern);
 }
 
+.hp-bar .hp-bar-color .hp-percent {
+  position: absolute;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hp-bar .hp {
+  position: absolute;
+  top: var(--top-offset);
+  left: 0;
+  transform: translate(0%, -50%);
+  font-size: var(--hp-font);
+}
+
+/* ==========================================
+   EFECTO GLOW
+   ========================================== */
+.glow-effect {
+  --animation-duration: 5s;
+  --delay-multiplier: 0;
+  --glow-line-color: hsl(var(--light-green));
+  --glow-line-thickness: 2px;
+  --glow-line-length: 20px;
+  --glow-blur-color: #fff;
+  --glow-blur-size: 5px;
+  --glow-offset: 0px;
+  --animation-speed: 1200ms;
+  --container-offset: 100px;
+  --animation-delay: calc(var(--animation-duration) * var(--delay-multiplier));
+  position: relative;
+}
+
+.glow-effect[data-glow-animation="false"] {
+  --glow-line-length: 50px;
+}
+
+.glow-effect[data-glow-offset="true"] {
+  --glow-offset: 10px;
+}
+
+.glow-effect .glow-container {
+  pointer-events: none;
+  position: absolute;
+  inset: calc(var(--container-offset) / -2);
+  width: calc(100% + var(--container-offset));
+  height: calc(100% + var(--container-offset));
+  opacity: 0;
+  animation: glow-visibility infinite var(--animation-duration)
+    var(--animation-speed);
+  animation-delay: var(--animation-delay);
+}
+
+.glow-effect .glow-container .glow-blur,
+.glow-effect .glow-container .glow-line {
+  width: calc(100% - var(--container-offset) + var(--glow-offset));
+  height: calc(100% - var(--container-offset) + var(--glow-offset));
+  x: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
+  y: calc((var(--container-offset) / 2) + calc(var(--glow-offset) / -2));
+  fill: transparent;
+  stroke: black;
+  stroke-width: 5px;
+  stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length));
+  animation: glow-animation infinite var(--animation-duration)
+    var(--animation-speed);
+  animation-delay: var(--animation-delay);
+}
+
+.glow-effect .glow-container .glow-line {
+  stroke: var(--glow-line-color);
+  stroke-width: var(--glow-line-thickness);
+}
+
+.glow-effect .glow-container .glow-blur {
+  filter: blur(var(--glow-blur-size));
+  stroke: var(--glow-blur-color);
+  stroke-width: var(--glow-blur-size);
+}
+
+/* ==========================================
+   ANIMACIONES
+   ========================================== */
+
+/* Animaciones de rebote */
+@keyframes idleBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Animaciones de parallax */
 @keyframes primary {
-  from { left: 0%; }
-  to { left: -100%; }
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
 }
 
 @keyframes secondary {
-  from { left: 100%; }
-  to { left: 0%; }
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
 }
 
+/* Animaciones de glitch */
 @keyframes glitch-anim-2 {
   0% {
     opacity: 1;
-    transform: translate3d(var(--gap-horizontal),0,0);
+    transform: translate3d(var(--gap-horizontal), 0, 0);
     clip-path: polygon(0 2%, 100% 2%, 100% 5%, 0 5%);
   }
-  2% { clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%); }
-  4% { clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%); }
-  6% { clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%); }
-  8% { clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%); }
-  10% { clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%); }
-  12% { clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%); }
-  14% { clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%); }
-  16% { clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%); }
-  18% { clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%); }
-  20% { clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%); }
+  2% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+  }
+  4% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+  }
+  6% {
+    clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+  }
+  8% {
+    clip-path: polygon(0 33%, 100% 33%, 100% 33%, 0 33%);
+  }
+  10% {
+    clip-path: polygon(0 44%, 100% 44%, 100% 44%, 0 44%);
+  }
+  12% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 20%, 0 20%);
+  }
+  14% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+  }
+  16% {
+    clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+  }
+  18% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+  }
+  20% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 80%, 0 80%);
+  }
   21.9% {
     opacity: 1;
-    transform: translate3d(var(--gap-horizontal),0,0);
+    transform: translate3d(var(--gap-horizontal), 0, 0);
   }
-  22%, 100% {
+  22%,
+  100% {
     opacity: 0;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
   }
 }
@@ -155,26 +340,47 @@
 @keyframes glitch-anim-3 {
   0% {
     opacity: 1;
-    transform: translate3d(calc(-1 * var(--gap-horizontal)),0,0);
+    transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
     clip-path: polygon(0 25%, 100% 25%, 100% 30%, 0 30%);
   }
-  3% { clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%); }
-  5% { clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%); }
-  7% { clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%); }
-  9% { clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%); }
-  11% { clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%); }
-  13% { clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%); }
-  15% { clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%); }
-  17% { clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%); }
-  19% { clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%); }
-  20% { clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%); }
+  3% {
+    clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+  }
+  5% {
+    clip-path: polygon(0 5%, 100% 5%, 100% 20%, 0 20%);
+  }
+  7% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+  }
+  9% {
+    clip-path: polygon(0 40%, 100% 40%, 100% 40%, 0 40%);
+  }
+  11% {
+    clip-path: polygon(0 52%, 100% 52%, 100% 59%, 0 59%);
+  }
+  13% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+  }
+  15% {
+    clip-path: polygon(0 75%, 100% 75%, 100% 75%, 0 75%);
+  }
+  17% {
+    clip-path: polygon(0 65%, 100% 65%, 100% 40%, 0 40%);
+  }
+  19% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 50%, 0 50%);
+  }
+  20% {
+    clip-path: polygon(0 14%, 100% 14%, 100% 33%, 0 33%);
+  }
   21.9% {
     opacity: 1;
-    transform: translate3d(calc(-1 * var(--gap-horizontal)),0,0);
+    transform: translate3d(calc(-1 * var(--gap-horizontal)), 0, 0);
   }
-  22%, 100% {
+  22%,
+  100% {
     opacity: 0;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
   }
 }
@@ -182,42 +388,112 @@
 @keyframes glitch-anim-4 {
   0% {
     opacity: 1;
-    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1,-1,1);
+    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0)
+      scale3d(-1, -1, 1);
     clip-path: polygon(0 1%, 100% 1%, 100% 3%, 0 3%);
   }
-  1.5% { clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%); }
-  2% { clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%); }
-  2.5% { clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%); }
-  3% { clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%); }
-  5% { clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%); }
-  5.5% { clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%); }
-  7% { clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%); }
-  8% { clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%); }
-  9% { clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%); }
-  10.5% { clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%); }
-  11% { clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%); }
-  13% { clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%); }
-  14% { clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%); }
-  14.5% { clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%); }
-  15% { clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%); }
-  16% { clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%); }
-  18% { clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%); }
-  20% { clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%); }
+  1.5% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 9%, 0 9%);
+  }
+  2% {
+    clip-path: polygon(0 5%, 100% 5%, 100% 6%, 0 6%);
+  }
+  2.5% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+  }
+  3% {
+    clip-path: polygon(0 10%, 100% 10%, 100% 10%, 0 10%);
+  }
+  5% {
+    clip-path: polygon(0 30%, 100% 30%, 100% 25%, 0 25%);
+  }
+  5.5% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 16%, 0 16%);
+  }
+  7% {
+    clip-path: polygon(0 40%, 100% 40%, 100% 39%, 0 39%);
+  }
+  8% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 21%, 0 21%);
+  }
+  9% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 55%, 0 55%);
+  }
+  10.5% {
+    clip-path: polygon(0 30%, 100% 30%, 100% 31%, 0 31%);
+  }
+  11% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 69%, 0 69%);
+  }
+  13% {
+    clip-path: polygon(0 40%, 100% 40%, 100% 41%, 0 41%);
+  }
+  14% {
+    clip-path: polygon(0 80%, 100% 80%, 100% 75%, 0 75%);
+  }
+  14.5% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 51%, 0 51%);
+  }
+  15% {
+    clip-path: polygon(0 90%, 100% 90%, 100% 90%, 0 90%);
+  }
+  16% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+  }
+  18% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 99%, 0 99%);
+  }
+  20% {
+    clip-path: polygon(0 70%, 100% 70%, 100% 71%, 0 71%);
+  }
   21.9% {
     opacity: 1;
-    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0) scale3d(-1,-1,1);
+    transform: translate3d(0, calc(-1 * var(--gap-vertical)), 0)
+      scale3d(-1, -1, 1);
   }
-  22%, 100% {
+  22%,
+  100% {
     opacity: 0;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
   }
 }
 
+/* Animaciones de efectos especiales */
+@keyframes containerPulsate {
+  0% {
+    box-shadow: 0 0 0 0 var(--light-green);
+  }
+}
+
+@keyframes glow-visibility {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}
+
+@keyframes glow-animation {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -80px;
+  }
+}
+
+/* ==========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ========================================== */
+
+/* Móviles pequeños (320px - 425px) */
 @media (min-width: 320px) and (max-width: 425px) {
   .presentation-container {
-    height: 60vh;
-    margin-top: 3rem;
+    text-align: center;
   }
 
   .presentation-content {
@@ -225,16 +501,18 @@
   }
 
   .presentation-image-container {
-    margin-top: 13rem;
     width: 140px;
-    height: 180px;
+    height: 140px;
   }
 
   .glitch-img {
     width: 100px;
     height: 150px;
-    bottom: 14px;
     left: 20px;
+  }
+
+  .lvl-container {
+    margin-top: 15rem;
   }
 
   .presentation-text {
@@ -253,12 +531,21 @@
     margin-top: 1rem;
     font-size: 7px;
   }
+
+  .hp-bar {
+    width: 150px;
+    height: 1.2ch;
+  }
+
+  .hp-bar .hp-percent {
+    font-size: 0.5rem !important;
+  }
 }
 
+/* Móviles medianos (426px - 576px) */
 @media (min-width: 426px) and (max-width: 576px) {
   .presentation-container {
-    height: 70vh;
-    margin-top: 3rem;
+    text-align: center;
   }
 
   .presentation-content {
@@ -266,9 +553,8 @@
   }
 
   .presentation-image-container {
-    margin-top: 13rem;
     width: 140px;
-    height: 180px;
+    height: 140px;
   }
 
   .glitch-img {
@@ -276,6 +562,10 @@
     height: 150px;
     bottom: 14px;
     left: 20px;
+  }
+
+  .lvl-container {
+    margin-top: 12rem;
   }
 
   .presentation-text {
@@ -294,27 +584,39 @@
     margin-top: 1.5rem;
     font-size: 9px;
   }
+
+  .hp-bar {
+    width: 150px;
+    height: 1.2ch;
+  }
+
+  .hp-bar .hp-percent {
+    font-size: 0.5rem !important;
+  }
 }
 
+/* Tablets verticales (577px - 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
   .presentation-container {
-    height: 80vh;
+    text-align: center;
   }
 
   .presentation-content {
     flex-direction: column-reverse;
   }
 
-  .presentation-image-container {
+  .lvl-container {
     margin-top: 15rem;
+  }
+
+  .presentation-image-container {
     width: 140px;
-    height: 180px;
+    height: 140px;
   }
 
   .glitch-img {
     width: 100px;
     height: 150px;
-    bottom: 14px;
     left: 20px;
   }
 
@@ -334,8 +636,18 @@
     margin-top: 1.5rem;
     font-size: 9px;
   }
+
+  .hp-bar {
+    width: 150px;
+    height: 1.2ch;
+  }
+
+  .hp-bar .hp-percent {
+    font-size: 0.5rem !important;
+  }
 }
 
+/* Tablets horizontales (769px - 1023px) */
 @media (min-width: 769px) and (max-width: 1023px) {
   .presentation-text {
     margin-top: 10rem;
@@ -355,6 +667,7 @@
   }
 }
 
+/* Escritorios pequeños (1024px - 1200px) */
 @media (min-width: 1024px) and (max-width: 1200px) {
   .presentation-text {
     margin-top: 8rem;
@@ -374,6 +687,7 @@
   }
 }
 
+/* Pantallas con altura muy pequeña */
 @media (max-height: 375px) {
   .presentation-content {
     flex-direction: row;
